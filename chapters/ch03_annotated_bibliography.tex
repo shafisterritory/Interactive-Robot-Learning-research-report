@@ -1,0 +1,2048 @@
+%!TEX root = ../report.tex
+\usepackage{cite}
+\documentclass[report.tex]{subfiles}
+\begin{document}
+\chapter{Annotated Bibliography}
+\section{Learning Methodologies and Algorithms}
+\subsection{Imitation Learning: A Survey of Learning Methods} 
+
+\noindent\textbf{Reference} \\
+\cite{hussein_imitation_2018}Ahmed Hussein, Mohamed Medhat Gaber, Eyad Elyan, and Chrisina Jayne. Imitation Learning:A Survey of Learning Methods. ACM Computing Surveys, 50(2):1–35, March 2018. 400 citations(Semantic Scholar/DOI) [2025-05-14].
+\\
+
+
+\noindent\textbf{Keywords} \\
+human robot interaction , social robots 
+   \\
+
+\noindent\textbf{Abstract} \\
+mitation learning techniques aim to mimic human behavior in a given task. An agent (a learning machine) is trained to perform a task from demonstrations by learning a mapping between observations and actions. The idea of teaching by imitation has been around for many years; however, the field is gaining attention recently due to advances in computing and sensing as well as rising demand for intelligent applications. The paradigm of learning by imitation is gaining popularity because it facilitates teaching complex tasks with minimal expert knowledge of the tasks. Generic imitation learning methods could potentially reduce the problem of teaching a task to that of providing demonstrations, without the need for explicit programming or designing reward functions specific to the task. Modern sensors are able to collect and transmit high volumes of data rapidly, and processors with high computational power allow fast processing that maps the sensory data to actions in a timely manner. This opens the door for many potential AI applications that require real-time perception and reaction such as humanoid robots, self-driving vehicles, human computer interaction, and computer games, to name a few. However, specialized algorithms are needed to effectively and robustly learn models as learning by imitation poses its own set of challenges. In this article, we survey imitation learning methods and present design options in different steps of the learning process. We introduce a background and motivation for the field as well as highlight challenges specific to the imitation problem. Methods for designing and evaluating imitation learning tasks are categorized and reviewed. Special attention is given to learning methods in robotics and games as these domains are the most popular in the literature and provide a wide array of problems and methodologies. We extensively discuss combining imitation learning approaches using different sources and methods, as well as incorporating other motion learning methods to enhance imitation. We also discuss the potential impact on industry, present major applications, and highlight current and future research directions.
+\\
+
+\noindent\textbf{Summary} \\
+This paper reviews imitation learning  a way for robots to learn new tasks by watching humans or other robots do them first, instead of being programmed step by step or figuring things out through trial and error.Imitation learning matters because it lets machines pick up complicated skills naturally and quickly   skills that would be really hard to program by hand. It also means regular people (not just programmers) can teach robots new tasks just by showing them what to do, making AI easier to use in robots, self driving cars, and everyday tech.\\
+\\
+Previous researchers developed different approaches:Behavioral Cloning: the robot copies exactly what it sees  if you're in this situation, do this action" Inverse Reinforcement Learning: the robot tries to figure out the goals behind the actions   "why did the human do that?" Mixed methods: combining different approaches to work better in new situations ,The authors didn't create a new method   instead they organized and compared all the existing approaches to imitation learning. They explained how each method works, what it's good and bad at, and where it's been used, helping other researchers pick the right approach for their specific problems.They helped by taking all the scattered research and organizing it into one clear picture.\\\\ Instead of just focusing on one technique like most studies do, they gave researchers a big picture view of all the options, making it easier to see what's missing and choose between different approaches.The authors say future research needs to focus on making imitation learning work better with less data, handle messy real world situations, and scale up to harder problems. They also want researchers to combine different learning methods and create better ways to test and compare approaches fairly.\\
+
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item  Complete overview of how robots learn by watching ,Organized methods into three main types: copying actions, figuring out goals, and mixed approaches , Explained what works and what doesn't for each type with real examples , Found big unsolved problems like making methods work reliably with less data , Created a helpful guide for researchers to pick the right approach for their projects
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item     Methods have flaws , copying actions leads to growing mistakes, figuring out goals is computationally slow , Don't work well in messy real world situations or with complex tasks , No fair testing  methods aren't properly compared against each other under the same conditions , Missed emerging trends, didn't fully cover how deep learning was starting to change imitation learning
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item Clear taxonomy that organizes the field into three main approaches, making a complex literature accessible.
+        \item Balanced evaluation of methods, showing both potential and limitations.
+        \item Strong focus on motivation and practical applications, linking theory with real world robotics.
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item No actual testing , didn't run experiments to fairly compare different methods side by side 
+        \item Getting outdated , since 2018, AI advances like deep learning and generative models have transformed imitation learning, but the survey missed this 
+        \item  Ignores important issues , doesn't discuss ethics, safety, or social concerns about teaching robots through demonstrations
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item    How can IL methods be made robust to imperfect or noisy demonstrations?
+
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item Make methods work better with less data and in real situations; combine different learning approaches; create fair ways to test and compare methods
+        \item Explore multi modal demonstrations (speech, gestures, VR input) beyond simple state action pairs. 
+        
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+Imitation learning is a promising way for robots to learn by watching humans, but current methods struggle with reliability, speed, and handling complex real world situations. This survey organizes the field clearly and shows what problems researchers still need to solve.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Learning for a robot: Deep reinforcement learning, imitation
+learning, transfer learning,} 
+
+\noindent\textbf{Reference} \\
+\cite{hua_learning_2021}J. Hua, L. Zeng, G. Li, and Z. Ju, “Learning for a robot: Deep reinforcement learning, imitation
+learning, transfer learning,” 2 2021. \\
+
+
+\noindent\textbf{Keywords} \\
+dexterous manipulation; adaptive and robust control; deep reinforcement learning; imitation
+learning; transfer learning
+   \\
+
+\noindent\textbf{Abstract} \\
+Dexterous manipulation of the robot is an important part of realizing intelligence, but manipulators
+can only perform simple tasks such as sorting and packing in a structured environment. In view of
+the existing problem, this paper presents a state-of-the-art survey on an intelligent robot with the
+capability of autonomous deciding and learning. The paper first reviews the main achievements and
+research of the robot, which were mainly based on the breakthrough of automatic control and
+hardware in mechanics. With the evolution of artificial intelligence, many pieces of research have
+made further progresses in adaptive and robust control. The survey reveals that the latest research in
+deep learning and reinforcement learning has paved the way for highly complex tasks to be
+performed by robots. Furthermore, deep reinforcement learning, imitation learning, and transfer
+learning in robot control are discussed in detail. Finally, major achievements based on these
+methods are summarized and analyzed thoroughly, and future research challenges are proposed.\\
+
+
+\noindent\textbf{Summary} \\
+this survey is about Deep Reinforcement Learning (DRL), Imitation Learning, and Transfer
+Learning to make the robot be able to autonomously learn manipulation skills and adapt to the
+complex environment . Despite of all the progress that have achieved in the sector the robot still
+struggles with dexterous manipulation in unstructured or dynamic environment . In order for the
+robot to perform in a complex environment such as dish washing or dressing , the robot has has to
+have human like thinking , which the current hard coded system fails to achieve . \\\\The existing
+solution is include mathematical modeling for force and shape closure. Data driven methods using
+sensors, vision, and wearables for grasp planning .Deep learning to autonomously extract features
+from images.Early uses of DRL, Imitation Learning (IL), and Transfer Learning (TL) in simplified
+or simulated tasks. And there are some downside to this existing models , that are , Mathematical
+models require accurate geometric data and are computationally expensive. Data driven techniques
+still depend heavily on hand crafted features and are not robust in dynamic settings.\\\\
+DRL needs massive data and time, limiting real world application . Imitation learning lacks
+generalization and often struggles with sparse or incomplete demonstrations. Transfer learning
+suffers from the sim to real gap due to differences between simulation and reality.
+\noindent\textbf{}In this paper the author proposed some approaches , that are systematically reviewing and
+analyzing DRL, IL , and TL methods for robot manipulation . Present comparative evaluations,
+taxonomies, and classifications of algorithms (e.g., DQN, PPO, GAIL) .Discuss improvements in
+learning efficiency through hierarchical RL, behavioral cloning, GAIL, and policy
+randomization .Propose meta learning and one shot learning as future directions for achieving
+general purpose robotic learning. \\\\And the proposed solution is better in many aspects , it provides
+an profound understanding framework that identifies the strength and limitations of each learning
+method . It highlights hybrid strategies combining DRL , IL and TL to mitigate each methods
+weakness. There are certain thing that remains to be done , such as Further improvement in
+generalization, data efficiency, and learning speed.More robust simulation to real transfer with
+reduced domain gap.More robust simulation to real transfer with reduced domain gap.\\
+
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item The paper presents a proper understanding state of the art survey on robot learning methods
+         Deep Reinforcement Learning (DRL), Imitation Learning (IL), and Transfer Learning (TL).
+classifies and explains key algorithms under each category ( DQN, PPO, GAIL,), including
+their strengths, limitations, and applications in robotics.
+
+         Proposes an integrated perspective by highlighting combinations of methods ( GAIL +
+VAE, DRL + TL) to overcome individual method weaknesses.
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item There are inefficiency in sample , spars rewards and slow convergence  IL is data hungry, lacks generalization, and may suffer from compounding errors in long
+term predictions TL struggles with the sim to real gap, making learned policies fragile in real environments.
+       
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item Totally understandable and well organized review of three major robot learning paradigms
+        \item Provides clear taxonomy and practical examples of algorithmic families.
+        \item Connects theoretical foundations to practical applications ( industrial robots, personal
+assistants, surgical robots).
+       
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item Too descriptive at times, especially when explaining algorithms, which may not find the
+readers that looking for the technical depth .
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item How scalable are these learning methods to high DoF humanoid robots in complex,
+unstructured environments?
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item Develop one shot third person imitation learning.
+        \item Improve generalization and robustness of policies across varying environments.
+        \item Refine meta learning frameworks to reduce data dependency.
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+This paper provides a solid foundation for understanding the current landscape of robot
+learning via DRL, IL, and TL. While informative and well structured ,it underscores that combining learning methods and advancing generalization strategies is
+essential for intelligent , adaptable robot behavior.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Intrinsic interactive reinforcement  learning – Using error related  potentials for real world humanrobot interaction} 
+
+\noindent\textbf{Reference} \\
+\cite{kim_intrinsic_2017}Su Kyoung Kim, Elsa Andrea Kirchner, Arne Stefes, and Frank Kirchner. Intrinsic interactive
+reinforcement learning – Using error-related potentials for real world human-robot interaction.
+Scientific Reports, 7(1):17562, December 2017. 119 citations (Semantic Scholar/DOI) [2025-05-14].
+\\
+
+
+\noindent\textbf{Keywords} \\
+interactive reinforcement  learning , humanrobot interaction
+   \\
+
+\noindent\textbf{Abstract} \\
+Reinforcement learning (RL) enables robots to learn its optimal behavioral strategy in dynamic environments based on feedback. Explicit human feedback during robot RL is advantageous, since an explicit reward function can be easily adapted. However, it is very demanding and tiresome for a human to continuously and explicitly generate feedback. Therefore, the development of implicit approaches is of high relevance. In this paper, we used an error related potential (ErrP), an event related activity in the human electroencephalogram (EEG), as an intrinsically generated implicit feedback (rewards) for RL. Initially we validated our approach with seven subjects in a simulated robot learning scenario. ErrPs were detected online in single trial with a balanced accuracy  of 91 percent , which was sufficient to learn to recognize gestures and the correct mapping between human gestures and robot actions in parallel. Finally, we validated our approach in a real robot scenario, in which seven subjects freely chose gestures and the real robot correctly learned the mapping between gestures and actions (ErrP detection (90 percent  bACC)). In this paper, we demonstrated that intrinsically generated EEG based human feedback in RL can successfully be used to implicitly improve gesture based robot control during human robot interaction. We call our approach intrinsic interactive RL.\\
+
+
+\noindent\textbf{Summary} \\
+The challenge of improving reinforcement learning (RL) in real world scenarios involving human robot interaction is addressed in this paper.  Clear reward systems are necessary for normal reinforcement learning, but realworld tasks can make it difficult, costly, or even impossible to determine the appropriate rewards.  The researchers investigate the possibility of using human brain signals as feedback to aid robot learning.\\\\
+ This is significant because, over extended interactions, asking people to provide feedback by pressing buttons or offering rewards becomes exhausting and feels awkward.  They are looking for a simple, automatic method to improve human robot collaboration and make it more widely usable.In the past, techniques such as interactive RL, cooperative inverse RL, and inverse RL have attempted to identify or enhance reward systems by means of human input or demonstrations.  \\\\\\\The use of brain wave signals (EEG), particularly error related brain responses, to identify robot errors has already been the subject of some research.  However, previous research was restricted to easy, controlled tasks and primarily relied on clear error displays or preset correct answers.
+ The drawbacks of previous methods include their reliance on manual reward systems or explicit labels, their inability to adjust to novel circumstances, and their inability to manage more fluid and natural human robot interactions.
+\noindent\textbf{}The researchers propose "Intrinsic Interactive RL" as a solution, in which robots automatically reward themselves with brain wave based error signals.  When a person observes a robot perform an action, their brain automatically generates an error signal if the action is incorrect.  Real time detection of this allows the robot to modify its behavior without requiring human intervention.  In order to connect gestures to robot actions, the researchers used a learning algorithm in conjunction with a hand gesture system and a robot arm.
+ Both computer simulations and actual robot experiments involving seven humans were used for the testing.  While everything was going on, error signals were picked up with high accuracy (roughly 90 percent in real robot tasks and 91percentr  in simulation).Over time, the robot made fewer mistakes as it was able to learn which gestures corresponded to which actions. This solution is more natural than current approaches, does not require explicit labeling, and has great potential for widespread real world human robot interaction.\\\\
+In conclusion, the study demonstrates that automatic feedback based on brain waves can be an effective robotics reinforcement learning tool. Making the system function consistently across a wider range of gestures and tasks, managing incorrect classifications, adjusting to new users, and scaling up to intricate multi step tasks are still obstacles, though. Long term adaptive learning, continuous tasks, and expanding the approach to larger sets of actions should be the main goals of future research.
+\\
+
+
+
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item introduced Intrinsic Interactive Reinforcement Learning (I²RL), in which implicit reward signals in reinforcement learning are provided by EEG based error related potentials (ErrPs).High accuracy online single trial ErrP detection was demonstrated (91 percent in simulation, 90 percent in real robot). learned gesture to action mappings by combining contextual bandit RL (LinUCB variant) with gesture recognition (through the Leap Motion Controller). suggested using time shifted EEG epochs as a data augmentation technique to make up for sparse error data and increase the robustness of the classifier.
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item     Limited scalability: the authors point out that the current method only works with a limited set of actions (3 gestures, 3 actions).The accuracy of ErrP detection is crucial to the system; false negatives seriously impair learning stability.The system relearns mappings from scratch rather than adding new ones, so gesture meanings cannot be gradually expanded.
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item Technically novel: rewarding reinforcement learning with naturally occurring brain signals 
+       
+        \item Relatively little calibration work and high online classification accuracy.
+        \item  A live demonstration using a real robot, not just a simulation.
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item  Small scale tests using limited movements and activities.
+    
+        \item New gestures cannot be learned incrementally; mappings must be fully relearned.
+        \item Performance is sensitive to individual differences in EEG signals; it is doubtful if this is true for all users.
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item  How can large, continuous, and dynamically changing action spaces be supported by scaling intrinsic interactive reinforcement learning (I²RL) based on EEG error related potentials while preserving robustness across various users and real world scenarios?
+
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item  Expand the use of ErrP based RL to continuous tasks and larger action spaces. Examine methods for gradually adding new gestures without completely relearning them.Examine how reliable ErrP detection is in challenging real world HRI situations.
+        
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+This study demonstrates how human brain error signals (ErrPs) can directly direct robot reinforcement learning, facilitating implicit and natural human robot interaction. Despite its great potential, the approach is currently only applicable to small scale tasks and is heavily reliant on the accuracy of EEG classification.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Interactive Robot-Robot Reinforcement Learning for Object Balancing Task} 
+
+\noindent\textbf{Reference} \\
+\cite{kim_interactive_2024}Y. Kim, H. Jeon, and B.-Y. Kang, “Interactive Robot-Robot Reinforcement Learning for Object Balancing Task,” in 2024 IEEE International Conference on Consumer Electronics (ICCE), (Las Vegas,NV, USA), pp. 1–6, IEEE, Jan. 2024. 0 citations (Semantic Scholar/DOI) [2025-05-14]. \\
+
+
+\noindent\textbf{Keywords} \\
+interactive reinforcement learning, robot-robot learning, reinforcement learning, cooperative robot
+   \\
+
+\noindent\textbf{Abstract} \\
+Robots with machine learning are expanding their application fields, such as serving robots and guiding robots, but applying machine learning to robots has a high labor cost due to human intervention. This paper proposes interactive robotrobot reinforcement learning technology to minimize human intervention in learning tasks that successfully balance objects between two robots. In this proposed technique, the teacher and student robot guide and learn object balancing based on reinforcement learning. Teacher robot teaches knowledge that has not been learned in advance to student robot, and teaches more effectively by providing various positive and negative text feedback on the training results. In virtual simulations, the training results of the student robot converge to the optimal policy as an evaluation result of the proposed method, and the trained student robot performs appropriate actions according to various table states by the teacher’s random action. Through our experimental results, the application possibility of robotrobot learning is verified being as good as human-robot learning. Our proposed method could be utilized to seamlessly transfer the learned knowledge when it is challenging to apply the learning model to a heterogeneous robot or an agent in an IoT environment.\\
+
+
+\noindent\textbf{Summary} \\
+The paper looks at how to train robots to work together on tasks like balancing a table or box between them, without needing people to help all the time. The main idea is to let robots learn from each other, so they don’t always rely on human guidance.Training robots right now takes a lot of time and help from people, which makes it expensive and hard to do often. But as robots are being used more in places like restaurants, hotels, and homes, we need better and faster ways to teach them. Many real world tasks need robots to work together, like carrying things, but most research only looks at robots working alone. If training always needs people, it’s hard to use robots in more places. Other researchers have tried different ways to help robots learn better. One team used human voice, eye movement, and gestures to teach robots through interaction. Another group made robots that could ask people questions when they were unsure what to do.\\\\ Some studies used human feedback to teach robots how to balance things with a person. But most of the past work focused on robots working alone, not on robots working together.\\\\
+\noindent\textbf{}Even though past research has helped, there are still some big issues. Most methods still need people to guide the robot all the time, which takes a lot of time and costs a lot of money. This makes it hard to use robots in many places. Also, these systems don’t easily let robots share what they’ve learned or work well in new places. Robots that learn by listening to people can also make mistakes because they don’t always understand speech correctly. Even though past research has helped, there are still some big issues. Most methods still need people to guide the robot all the time, which takes a lot of time and costs a lot of money. This makes it hard to use robots in many places. Also, these systems don’t easily let robots share what they’ve learned or work well in new places. Robots that learn by listening to people can also make mistakes because they don’t always understand speech correctly.\\\\
+\noindent\textbf{} The authors built a system where one robot teaches another how to balance objects. The teacher robot is already trained and gives simple text feedback like "Great!" or "Try again." This feedback is turned into scores using Google’s language tool. Both robots use a learning method called Deep Q Network to decide their actions, which include moving up or down to keep balance. The system runs in a simulation with NAO robots practicing balancing tables and boxes together.
+The new system works better than older ones in many ways. It learns how to balance objects much faster after 4,000 tries instead of 20,000 . It also always finds the best way, passing every test it was given. Unlike older methods, it doesn’t need people to help all the time and doesn’t make mistakes from misunderstanding voice commands. It works well with different tasks like balancing tables and boxes, showing it is steady and reliable. 
+
+
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item The authors came up with a new way for robots to teach each other using text instead of needing humans to help all the time. They made a smart way to change words into scores that help the robots learn. This means people don’t have to do as much work during training. Also, their system lets different kinds of robots share what they learn easily.
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item The robots’ motors got too hot during real tests. The system only uses text to talk, not other ways. It was only tested with balancing objects. They also need better ways to check how well robots learn and work together.
+        
+       
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item The paper clearly explains why less human help is needed to train robots. It solves a real problem for industries. The system learns faster and always succeeds in tests. The authors built a full system and gave clear details so others can copy it. They also used a smart way to turn text feedback into rewards.
+        
+       
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item The paper only tested one task (balancing), so we don’t know if it works for others. Results are from simulations, not real robots. It doesn’t explain why the method works so well. It assumes the teacher robot is perfect, which may not be true. There’s no deep study of which parts are most important, and it doesn’t compare well to other methods. The tests were limited to 30 runs.
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item     • Can this way work for different jobs like moving or grabbing things? What if the teacher robot makes mistakes , will the learner still do well? 
+
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item Adding voice feedback along with text, trying the system on more robot tasks and harder problems, fixing hardware issues to test on real robots, and creating better ways to measure how well robots learn from each other
+        
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+This paper shows that robots can learn well from each other using text feedback. This method works better than training with humans and doesn’t need people to be involved all the time.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Active learning in robotics: A review of control principles} 
+
+\noindent\textbf{Reference} \\
+\cite{taylor_active_2021}Annalisa T. Taylor, Thomas A. Berrueta, and Todd D. Murphey. Active learning in robotics: A review of control principles. Mechatronics, 77:102576, August 2021.
+
+\\
+
+
+\noindent\textbf{Keywords} \\
+Interactive Machine Learning; Interactive Reinforcement Learning; Human-agent Interaction.
+   \\Active learning Robotics ,Robot control Learning ,theory Perception and sensing ,Artificial intelligence
+
+\noindent\textbf{Abstract} \\
+Active learning is a decision making process. In both abstract and physical settings, active learning demands
+both analysis and action. This is a review of active learning in robotics, focusing on methods amenable to
+the demands of embodied learning systems. Robots must be able to learn efficiently and flexibly through
+continuous online deployment. This poses a distinct set of control oriented challenges—one must choose
+suitable measures as objectives, synthesize real time control, and produce analyses that guarantee performance
+and safety with limited knowledge of the environment or robot itself. In this work, we survey the fundamental
+components of robotic active learning systems. We discuss classes of learning tasks that robots typically
+encounter, measures with which they gauge the information content of observations, and algorithms for
+generating action plans. Moreover, we provide a variety of examples   from environmental mapping to
+nonparametric shape estimation that highlight the qualitative differences between learning tasks, information
+measures, and control techniques. We conclude with a discussion of control oriented open challenges, including
+safety constrained learning and distributed learning.
+
+\\
+
+
+\noindent\textbf{Summary} \\
+This paper looks at the role of active learning in robotics, focusing on how control methods can help robots learn effectively in real world situations. The main problem they're tackling is how robots, unlike computer programs, must learn while dealing with physical limits and environmental challenges, often without huge amounts of data or reliable models to work with. This creates a unique challenge because robots can't simply download knowledge or train offline like traditional AI systems   they must learn through physical interaction with their environment.\\\\
+This topic is really important because future self operating systems will increasingly work in uncertain and changing environments where passive, data based approaches  like traditional machine learning   aren't enough. Think about a robot trying to learn how to navigate a busy hospital, assist in surgery, or work alongside humans in a factory. These situations are constantly changing, and the robot can't rely on pre programmed responses for every possible scenario. Robots need to be "smart learners," able to decide what information to gather and how to act to improve their knowledge while staying safe and working efficiently. They must figure out what they don't know and actively seek out the right experiences to fill those knowledge gaps.
+
+
+
+\noindent\textbf{}
+\\
+The challenge is that robots can't just rely on existing datasets like most AI systems do. They have to actively explore and experiment in the physical world, which brings real risks and costs. Unlike a computer program that can run millions of simulations safely, a robot making a wrong move could damage itself, hurt someone, or break expensive equipment. They need to balance learning new things with avoiding damage to themselves or their surroundings, all while dealing with things like sensor noise, mechanical wear, and unpredictable environments that change over time. This means robots must be strategic about their learning   choosing actions that give them the most useful information while minimizing risk. They also have to deal with limited battery life, processing power, and the fact that real world experiments take time and can't be easily undone. The paper explores how control theory principles can help robots make these smart decisions about when, where, and how to learn, making them more adaptable and capable in complex, real world situations.
+\\\\
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item Introduces a control focused way of looking at active learning in robotics, emphasizing physical embodiment and decision making beyond just passive data driven learning. 
+         Provides a classification of robot learning goals parameters, models, features with technical examples like  mapping using Gaussian processes, shape estimation without parameters, Koopman operator for understanding movement
+        Surveys and formalizes information measures entropy, Fisher information, ergodicity as control objectives for active sensing. 
+        Reviews control creation methods MPC, iLQR/DDP, MPPI, SAC applied to active learning and compares short term vs. long term planning strategies.
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item Current approaches lack a general theory of embodied active learning that brings together control and learning. 
+        Deep RL methods are too data hungry and simulation dependent for real world use. 
+        
+       
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item Strong technical foundation: connects well established control tools like MPC, Fisher information  with emerging machine learning practices. 
+        \item Includes real examples ,such as  helicopter recovery, soft robotic touch sensing, ocean organism mapping
+
+       
+
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item Heavy emphasis on survey, but few number based comparisons between methods eg  performance tradeoffs of MPC vs. SAC in active learning. 
+        \item Some technical discussions eg  Koopman operator basis selection remain conceptual rather than practically concrete. 
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item     How can ergodic control be scaled to high dimensional sensing spaces eg  full vision systems? 
+
+
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item develop distributed active learning frameworks, integrate safety/stability constraints, and bridge theory practice gaps for embodied systems. 
+        \item investigate hybrid models combining Koopman operators with deep neural networks for scalable yet stable movement learning. 
+        \item Create formal safety aware active learning using control barrier functions or Lyapunov based guarantees. 
+        
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+Active learning in robotics must be treated as a control problem, not just data analysis: robots must move, probe, and act to learn. By bringing together information based measures with control creation methods, robots can achieve safer, more efficient, and more adaptive learning. However, building a general, scalable, and safety guaranteed framework remains an open challenge for the field.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Interactive Reinforcement Learning from Natural Language Feedback} 
+
+\noindent\textbf{Reference} \\
+\cite{tarakli_interactive_2024}Imene Tarakli, Samuele Vinanzi, and Alessandro Di Nuovo. Interactive Reinforcement Learning from
+Natural Language Feedback. In 2024 IEEE/RSJ International Conference on Intelligent Robots and
+Systems (IROS), pages 11478–11484, Abu Dhabi, United Arab Emirates, October 2024. IEEE.
+\\
+
+
+\noindent\textbf{Keywords} \\
+human robot interaction , social robots 
+   \\
+
+\noindent\textbf{Abstract} \\
+Large Language Models (LLMs) are increas-
+ingly influential in advancing robotics. This paper introduces
+ECLAIR (Evaluative Corrective Guidance Language as Rein-
+forcement), a novel framework that leverages LLMs to interpret
+and incorporate diverse natural language feedback into robotic
+learning. ECLAIR unifies various forms of human advice into
+actionable insights within a Reinforcement Learning context,
+enabling more efficient robot instruction. Experiments with
+real-world users demonstrate that ECLAIR accelerates the
+robot’s learning process, aligning its policy closer to optimal
+from the outset and reducing the need for extensive human
+intervention. Additionally, ECLAIR effectively integrates mul-
+tiple types of advice and adapts well to prompt modifica-
+tions. It also supports multilingual instruction, broadening
+its applicability and fostering more inclusive human-robot in 
+teractions\\
+
+
+\noindent\textbf{Summary} \\
+This paper tackles the challenge of letting robots learn from natural language feedback, specifically exploring how different types of human advice like evaluating actions, correcting mistakes, and giving guidance can be understood and used to help robots learn faster. The problem is really important because traditional robot learning relies on carefully designed reward systems and lots of trial and error exploration, which is slow, potentially dangerous, and hard to scale up in real world situations. Human feedback can help guide this learning process, but current methods are either too limited (only using one type of feedback) or require complex setup with lots of pre labeled data and demonstrations. A natural language interface makes it much easier for regular people who aren't robot experts to effectively teach and guide robots, breaking down the technical barriers that usually prevent non specialists from working with robotic systems.\\\\
+Previous research has explored interactive reinforcement learning methods like TAMER, Policy Shaping, and COACH that use evaluative or corrective signals, and recent work has started using large language models for reward shaping and task guidance in robot learning. However, most of these approaches focus on just one type of teaching signal, require structured input that's hard for regular users to provide, or don't bring together different feedback methods into a single system. The main problems with earlier work include studying human advice channels separately without a unified framework, often demanding predefined metrics or annotated data that take a lot of time to prepare, and existing language model integrations in robot learning that mainly generate rewards or goals but don't directly interpret free form human advice in real time. This gap between what people naturally want to say and what robots can understand motivated the authors to create a better solution.
+\noindent\textbf{}\\\\The researchers proposed ECLAIR, a framework where large language models interpret spoken natural language feedback and categorize it into three types: evaluative (rating an action), corrective (specifying the correct action), and guidance (suggesting the next action), then integrate this feedback directly into the robot's learning process through specific updates to its decision making system. In a user study with a robot doing a pick and place task, ECLAIR significantly outperformed the baseline method, showing faster learning toward expert level performance, 70 percent  higher effectiveness, less human input needed over time as the robot got better, and the ability to work with different languages like Arabic, French, Italian, and Spanish. However, challenges remain: the authors noted the need to test ECLAIR on more complex tasks and with larger, more diverse groups of users, and they want to improve how different types of advice work together and test how well the system works across different types of robot tasks. This research represents a significant step toward making robot learning more accessible and natural for everyday users.\\
+
+
+
+
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item  Developed ECLAIR, a system that uses computer understandable natural language to integrate three forms of human feedback rating actions, correcting errors, and making recommendations into robot learning.Developed a two step procedure in which the system uses speech recognition and language models to first interpret human speech, then utilizes the feedback to modify the robot's decision making process. Experiments with both real people and a robot demonstrated that the system worked with multiple languages, helped robots learn roughly 70 percent  faster than previous techniques, and required less human assistance over time. 
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item     It has only been tested on basic tasks, such as moving objects in a small grid, which may not be suitable for more complicated real world robot jobs.A small user study with only 12 participants who completed 8 episodes each is insufficient to determine how well it functions with various user types and circumstances.Hasn't been tested with more sophisticated robot learning systems that manage intricate, continuous movements; it only functions with simple learning techniques.
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item A sound technical strategy that appropriately incorporates various forms of human guidance into the robot's learning process. 
+     
+       
+        \item A useful design that makes the robot efficient for long term use by reducing the amount of human feedback as it gets better. 
+        \item Strong language comprehension that functioned across multiple languages and various instruction formats without faltering.
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item A sound technical strategy that appropriately incorporates various forms of human guidance into the robot's learning process. 
+     
+    
+        \item A useful design that makes the robot efficient for long term use by reducing the amount of human feedback as it gets better. 
+        \item Strong language comprehension that functioned across multiple languages and various instruction formats without faltering. 
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item   How does the system handle unclear or conflicting feedback from people in real time situations? 
+
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item  The authors intend to test using larger user studies, more complicated tasks, and a variety of human types. 
+     
+        \item My suggestions are to measure and optimize system speed, experiment with conversational teaching, where feedback resembles a dialogue, and test with sophisticated robot learning techniques for fluid movements. 
+        
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+ECLAIR demonstrates how rating, correcting, and guiding feedback can be effectively integrated into robot learning when natural language is comprehended by language models. Robots learn more quickly and with less human intervention thanks to the system, which outperforms conventional rating only methods. It is yet unknown, though, if it can manage messy real world language and intricate, real world robot tasks.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Deep Reinforcement Learning with Interactive
+Feedback in a Human–Robot Environment} 
+
+\noindent\textbf{Reference} \\
+\cite{moreira_deep_2020}Ithan Moreira, Javier Rivas, Francisco Cruz, Richard Dazeley, Angel Ayala, and Bruno Fernandes.
+Deep Reinforcement Learning with Interactive Feedback in a Human–Robot Environment. Applied
+Sciences, 10(16):5574, August 2020.\\
+
+
+\noindent\textbf{Keywords} \\
+robotics; interactive deep reinforcement learning; deep reinforcement learning;
+domestic scenario
+   \\
+
+\noindent\textbf{Abstract} \\
+Robots are extending their presence in domestic environments every day, it being more
+common to see them carrying out tasks in home scenarios. In the future, robots are expected to
+increasingly perform more complex tasks and, therefore, be able to acquire experience from different
+sources as quickly as possible. A plausible approach to address this issue is interactive feedback,
+where a trainer advises a learner on which actions should be taken from specific states to speed
+up the learning process. Moreover, deep reinforcement learning has been recently widely used in
+robotics to learn the environment and acquire new skills autonomously. However, an open issue
+when using deep reinforcement learning is the excessive time needed to learn a task from raw
+input images. In this work, we propose a deep reinforcement learning approach with interactive
+feedback to learn a domestic task in a Human–Robot scenario. We compare three different learning
+methods using a simulated robotic arm for the task of organizing different objects; the proposed
+methods are (i) deep reinforcement learning (DeepRL); (ii) interactive deep reinforcement learning
+using a previously trained artificial agent as an advisor (agent–IDeepRL); and (iii) interactive deep
+reinforcement learning using a human advisor (human–IDeepRL). We demonstrate that interactive
+approaches provide advantages for the learning process. The obtained results show that a learner
+agent, using either agent–IDeepRL or human–IDeepRL, completes the given task earlier and has
+fewer mistakes compared to the autonomous DeepRL approach.\\
+
+
+\noindent\textbf{Summary} \\
+This paper tackles the challenge of slow learning in deep reinforcement learning for robots working in household environments, specifically investigating how interactive feedback from either humans or artificial agents can speed up training and improve how well robots perform tasks. The problem is really important because robots in home settings need to learn from what they see through cameras in changing, unpredictable environments, where letting robots learn completely on their own takes way too much time and often leads to poor results. By adding interactive feedback, robots can use the knowledge that their trainers already have to learn faster and make fewer mistakes. This is especially crucial for domestic robots that need to be useful quickly rather than spending months or years learning basic tasks.\\\\
+Previous research has looked into deep reinforcement learning with vision based understanding, interactive feedback through reward or policy shaping, and supervised vision based sorting systems, with some studies combining reinforcement learning with demonstrations or applying interactive learning to games or simple tasks. However, these earlier approaches had several problems: supervised vision based sorting systems don't work well with new situations and need prelabeled data, deep reinforcement learning by itself is too slow and makes too many errors when starting from nothing, interactive feedback studies often focused on games or computer simulations rather than real domestic robot scenarios, and there wasn't enough research comparing human vs. artificial trainers using the same testing framework. These gaps motivated the authors to develop a more comprehensive approach that could work better in real household robot applications.
+\noindent\textbf{}\\\\To address these issues, the authors created an Interactive Deep Reinforcement Learning framework using policy shaping with early advising, where a robot arm in simulation received advice during the first 100 steps from either a previously trained artificial agent or a human trainer through a user interface. The base learning system used Deep Q Learning with vision processing and the task was sorting objects by color and shape using only camera input. The results showed that both interactive methods achieved much faster learning and higher rewards compared to baseline deep reinforcement learning, with collected rewards improving by about 64 percent with artificial trainers and 59 percent with human trainers over autonomous learning. \\\\Statistical tests confirmed these significant improvements, though human trainers varied in their teaching strategies but all still outperformed the baseline. However, challenges remain: the results need to be tested in real world robotic systems which have noise and complications that simulations don't have, choosing good trainers is really important since bad advice can actually make learning worse, and future work should focus on finding reliable artificial trainers, creating better ways to select good trainers, and extending this approach to more complex tasks and longer term human     robot collaboration.\\
+
+
+
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item  Created a new learning system that lets robots learn faster by getting advice from either humans or other trained robots during their early learning steps, instead of learning everything from scratch.Tested three different approaches in a robot sorting task: robots learning alone, robots getting advice from other trained robots, and robots getting advice from humans through a computer interface. 
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item  Only tested in computer simulation, not with real robots, so we don't know how it works with real world problems like noise, delays, and physical limitations. Human trainers were inexperienced (ages 16-24 with limited AI knowledge), which might not show how well the system works with expert trainers. 
+       
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item Clear technical setup with full details about the learning system, rewards, and actions, making it easy for others to reproduce the work. 
+        \item fair comparison with solid proof  : directly compared different approaches and used proper statistical tests to confirm the improvements were real. 
+        \item Practical design that balances efficiency penalties and error punishment, ensuring the robot learns robust behaviors. 
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item Too simple actions : only four basic moves (grab, move left, move right, drop) which doesn't represent the complexity of real robot tasks. 
+        \item Basic advice integration : just replaces the robot's decision completely instead of smartly combining trainer input with what the robot has learned. 
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item     How would this work with more complex robot movements that aren't just simple discrete actions? 
+
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item Test with real robots, find ways to identify good trainers, and try with different tasks and artificial trainers. 
+        \item Extend to more complex robot control, create systems that can judge how reliable trainers are, and test with multiple trainers giving advice at the same time. 
+        
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+whether from humans or other robots  can significantly speed up robot learning and reduce mistakes in vision based tasks. Even limited guidance improves learning efficiency by about 60 percent , but scaling to real world, complex tasks needs more development.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{A survey of inverse reinforcement learning: Challenges,
+methods and progress} 
+
+\noindent\textbf{Reference} \\
+\cite{arora_survey_2021}Saurabh Arora and Prashant Doshi. A survey of inverse reinforcement learning: Challenges, methods
+and progress. Artificial Intelligence, 297:103500, August 2021. \\
+
+
+\noindent\textbf{Keywords} \\
+Human robot interaction, robot learning, virtual reality and interfaces
+   \\
+
+\noindent\textbf{Abstract} \\
+Inverse reinforcement learning (IRL) is the problem of inferring the reward function of
+an agent, given its policy or observed behavior. Analogous to RL, IRL is perceived both
+as a problem and as a class of methods. By categorically surveying the extant literature
+in IRL, this article serves as a comprehensive reference for researchers and practitioners
+of machine learning as well as those new to it to understand the challenges of IRL
+and select the approaches best suited for the problem on hand. The survey formally
+introduces the IRL problem along with its central challenges such as the diﬃculty in
+performing accurate inference and its generalizability, its sensitivity to prior knowledge,
+and the disproportionate growth in solution complexity with problem size. The article
+surveys a vast collection of foundational methods grouped together by the commonality
+of their objectives, and elaborates how these methods mitigate the challenges. We further
+discuss extensions to the traditional IRL methods for handling imperfect perception, an
+incomplete model, learning multiple reward functions and nonlinear reward functions. The
+article concludes the survey with a discussion of some broad advances in the research area
+and currently open research questions..\\
+
+
+\noindent\textbf{Summary} \\
+This paper focuses on Inverse Reinforcement Learning (IRL), a method for figuring out what reward system an agent is using by watching how it behaves. The main problem is that while regular reinforcement learning needs clearly defined rewards to work, in many real world situations it's really hard or impossible to manually design these reward systems. IRL offers a solution by learning these hidden goals directly from watching demonstrations of good behavior. This topic matters a lot because autonomous systems, robots, and AI agents need to adapt to what humans want and handle complex tasks where it's not practical to explicitly program every goal.\\\\ This makes IRL really important for developing smart systems that can align with human values and learn from human expertise, especially in areas where we can't easily specify what we want the system to optimize for.
+Previous research has looked into several IRL approaches, including methods that focus on maximizing margins, probabilistic and Bayesian approaches, and deep learning based techniques. These methods have shown some promise but face major challenges like being computationally expensive, having ambiguous reward functions (where multiple different reward systems could explain the same behavior), and having trouble generalizing to high dimensional or real world settings. \\\\The main problems with existing methods are scalability, robustness, and handling imperfect demonstrations. Many algorithms assume that the demonstrations they're learning from are perfect or that the environment is simplified, which just isn't realistic for practical applications. Most real world demonstrations contain mistakes, suboptimal choices, or noise that current methods struggle to handle effectively.\\\\\\
+\noindent\textbf{}The authors don't propose a new algorithm but instead provide a comprehensive survey and analysis of IRL challenges, organizing the open problems into areas like scalability, generalization, safety, human in the loop learning, and interpretability. Their main contribution is creating a structured overview of the field that highlights what's missing in current state of the art approaches and points toward promising research directions. The survey emphasizes that their approach is better than previous fragmented reviews because it systematically maps challenges, compares different methodologies, and connects IRL research to real world needs. They also identify key applications like robotics, autonomous driving, and healthcare where solving these challenges is critical. The work that still needs to be done includes addressing sample efficiency, robustness to suboptimal and noisy demonstrations, integration with human feedback, interpretability of learned rewards, and alignment with ethical considerations. The authors stress that future progress depends on connecting theory with practice and scaling IRL methods to handle real world complexity.\\
+
+
+
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item   Organized different IRL methods into clear categories like margin based, entropy based, and Bayesian approaches, showing how they all connect through mathematical principles like matching expected features. Identified the main problems with current methods: multiple reward functions can explain the same behavior, trouble generalizing to new situations, and solutions becoming too complex as problems get bigger. Reviewed how IRL has been extended to handle noisy demonstrations, nonlinear reward functions using neural networks, and continuous domains beyond simple discrete problems
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item   scaling problems  : most IRL methods need to solve complex optimization problems repeatedly, making them too slow and expensive for large, real world applications. Poor evaluation methods :current ways of measuring how well IRL works don't capture whether the learned rewards actually lead to good performance in important situations. 
+        
+       
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item Clear mathematical explanation of how IRL works, connecting policies, reward functions, and expected features in understandable ways. Useful comparison tables showing different methods, their goals, and guarantees, which helps practitioners choose the right approach. 
+        
+       
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item no numbe based comparisons between methods  mostly just describes them without showing which work better in practice.
+        \item Limited coverage of modern deep learning methods beyond basic extensions, missing some recent advances in the field. 
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item     How can IRL work with complex, high dimensional problems like robots using vision without becoming impossibly slow? 
+
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item Improve sample efficiency, handle suboptimal demonstrations better, and deal with imperfect perception and incomplete models. 
+        \item Extend IRL for multiple agents working together, nonlinear rewards, and making learned objectives interpretable. 
+        
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+IRL tackles the fundamental problem of figuring out hidden reward functions from demonstrations, but it's technically challenging due to ambiguity, generalization problems, and computational complexity. Current foundational methods have made progress through optimization and probabilistic approaches, yet they're still limited in scalability and robustness. The field's future depends on combining probabilistic reasoning, deep learning, and human feedback to build interpretable and reliable IRL systems.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Human-Robot Communication and Interaction}
+\subsection{Interactive robot task learning: Human teaching proficiency with different feedback approaches} 
+
+\noindent\textbf{Reference} \\
+\cite{hindemith_interactive_2023} L. Hindemith, O. Bruns, A. M. Noller, N. Hemion, S. Schneider, and A. L. Vollmer, “Interactive robot task learning: Human teaching proficiency with different feedback approaches,” IEEE Transactions on Cognitive and Developmental Systems, vol. 15, pp. 1938–1947, 12 2023. \\
+
+
+\noindent\textbf{Keywords} \\
+Human feedback, human-in-the-loop robot learning, human–robot interaction (HRI) study,
+interactive machine learning (IML), learning from demonstration, preference learning,
+Programming by Demonstration (PbD), radial basis function network (RBFN), user study.
+   \\
+
+\noindent\textbf{Abstract} \\
+The deployment of versatile robot systems in diverse environments requires intuitive approaches for
+humans to flexibly teach them new skills. In our present work, we investigate different user
+feedback types to teach a real robot a new movement skill. We compare feedback as star ratings on
+an absolute scale for single roll-outs versus preference-based feedback for pairwise comparisons
+with respective optimization algorithms (i.e., a variation of co-variance matrix adaptation-evolution
+strategy (CMA-ES) and random optimization) to teach the robot the game of skill cup-and-ball. In
+an experimental investigation with users, we investigated the influence of the feedback type on the
+user experience of interacting with the different interfaces and the performance of the learning
+systems. While there is no significant difference for the subjective user experience between the
+conditions, there is a significant difference in learning performance. The preference-based system
+learned the task quicker, but this did not influence the users’ evaluation of it. In a follow-up study,
+we confirmed that the difference in learning performance indeed can be attributed to the human
+users’ performance. \\
+
+
+\noindent\textbf{Summary} \\
+this paper is about how human can effectively teach robots new skills , especially focusing on the
+type of feedback people give to help robots learn movements . The main challenge is that robots
+need intuitive ways for humans to teach them new skills, but designing these teaching interfaces is
+complex, especially when non experts are involved. Making robots more versatile and flexible for
+everyday use, whether in factories or homes, requires people to be able to teach them different
+behaviors easily. Current methods, like "Programming by Demonstration" (PbD) where a robot
+learns by watching a human, often rely on complex "cost functions" that are hard for even experts to
+design .Previous research in interactive machine learning and human robot interaction has looked
+into how humans can give "reward signals" to robots for learning. Much of this work focused on
+robots performing simple, distinct actions, where the basic actions were already known.\\\\
+\noindent\textbf{}There are several downside for the existing methods , Limited Action Space: Most prior work on
+human feedback for robot learning dealt with discrete action spaces, Reliance on External
+Measurements: Calculating the cost for robot performance often depends on external measurements
+like cameras .
+\\\\
+\noindent\textbf{}The authors proposed and investigated two main types of user feedback for teaching a real robot a
+new movement skill , Absolute Scale Feedback and Preference Based Feedback . The proposed
+studies are better than already existing work due to some facts , that are Faster Learning with
+Preference Based Feedback and Addressing Deficits of Absolute Scale by comparing absolute 
+scale feedback directly with preference based feedback .\\
+
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item Investigated and compared two common types of human feedback (absolute scale vs.
+preference based) for teaching a real robot a new movement skill (the cup and ball game).
+        Demonstrated that preference based feedback significantly improved the robot's learning
+performance, leading to faster acquisition of the task compared to absolute scale feedback.
+    The paper provides empirical evidence for the superior efficiency of preference based
+feedback in robot task learning involving continuous movement skills, which is a valuable
+contribution to the field of human robot interaction and robot learning.
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item The study did not find a significant difference in user experience between the two feedback
+conditions, indicating that improving learning performance alone might not enhance user
+enjoyment or perception of the interaction.
+         They acknowledge the need for further research to understand how humans can actively
+guide machine learning processes as teachers and how to design interfaces that improve both
+learning efficiency and user experience.
+        
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item experimental design with a direct comparison of two prominent feedback types.
+        \item Focus on a real robot and a non rivial, continuous movement task, enhancing ecological
+validity.
+        \item Thorough analysis of both robot learning performance and human subjective experience.
+        \item The paper is well structured and easy to understand, even for non experts in robotics.
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item The primary weakness is the relatively small sample size, which affects the statistical power
+of the user experience findings.
+        \item The "human like" aspect mentioned in the user's request for summarization was handled
+well, but the paper itself is quite technical, making it slightly challenging for a complete
+novice.
+       
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item Why did the improved robot performance not translate to a better subjective user experience
+in the preference based condition? What other factors contribute to a positive teaching
+experience?
+        
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item  Further research into designing human robot interfaces that not only facilitate efficient robot
+learning but also lead to a more positive and engaging user experience. Exploring how
+humans can effectively guide complex machine learning processes.
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+This paper shows that when teaching robots new moves, letting people choose between two
+options works better than rating them. This helps robots learn faster, but it doesn’t make
+teaching more fun for humans. So, we need better methods that are both fast for robots and
+enjoyable for people.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Human-Robot Interactive Learning Architecture
+using Ontologies and Symbol Manipulation} 
+
+\noindent\textbf{Reference} \\
+\cite{angleraud_human-robot_2018}V. K. Quentin Houbre1 and R. P. A. Angleraud1,”Human-Robot Interactive Learning Architecture
+using Ontologies and Symbol Manipulation” in IEEE RO-MAN 2018 : RO-MAN2018 : the 27th
+IEEE International Symposium on Robot and Human Interactive Communication. IEEE, 2018. \\
+
+
+\noindent\textbf{Keywords} \\
+Human Robot Interactive Learning , Ontologies and Symbol Manipulation
+   \\
+
+\noindent\textbf{Abstract} \\
+Robotic systems developed for support can provide assistance in various ways. However, regardless
+of the service provided, the quality of user interaction is key to adoption by the general public.
+Simple communication difficulties, such as terminological differences, can make or break the
+acceptance of robots. In this work we take into account these difficulties in communication between
+a human and a robot. We propose a system that allows to handle unknown concepts through symbol
+manipulation based on natural language interactions. In addition, ontologies are used as a
+convenient way to store the knowledge and reason about it. To demonstrate the use of our system,
+two scenarios are described and tested with a CareO Bot 4. The experiments show that confusions
+and difficulties in communication can effectively be resolved through symbol manipulation.\\
+
+
+\noindent\textbf{Summary} \\
+This paper is about solving communication problems between humans and robots, especially when
+robots encounter concepts or terms they don't already know. The main challenge is that differences
+in how humans and robots understand and use language can make it hard for people to accept and
+use robots in everyday life. Modern robots are being used more and more in homes and care
+facilities to help people. For these robots to be widely accepted and truly helpful, how well humans
+and robots interact is extremely important. If communication is difficult or confusing, it can stop
+people from wanting to use robots. Traditional robot programming needs highly trained experts ,
+and while newer interfaces make it easier to program tasks in structured settings like factories , they
+struggle when communication becomes unclear or ambiguous, especially for untrained users . These
+are the things that other have done so far , Previous work has focused on making robots aware of
+their environment, capabilities, and risks. Some systems allow robots to "reason" using knowledge
+bases to make deductions , there is a significant gap between how robots handle the unknown
+concepts during natural language interaction, and many methods struggles with Terminological
+Differences: Humans and robots might use different words for the same thing, or imply locations or
+actions that the robot doesn't explicitly know. \\\\Pre programming Limitations: It's tedious and
+impractical to pre program all possible communication methods, synonyms, and fallback
+mechanisms for every possible confusion. Symbol Grounding Problem which is the challenge of
+connecting abstract symbols (words) to concrete meanings and actions in the real world is a known
+issue.
+\noindent\textbf{}\\\\The author proposition has 3 main parts , input layer , reasoning layer and action layer . The input
+layer takes natural language from the human, converts it to text, and breaks it down into meaningful
+parts for the robot. It guides the conversation using a state machine to understand what the human is
+trying to teach . The reasoning layer , This is the brain of the system. It receives the processed
+language input and uses Prolog , a logic programming language, to reason with the knowledge
+stored in ontologies. It can understand requests, figure out if more information is needed, and
+update the robot's knowledge . And finally action layer , This layer translates the robot's
+understanding into actual robot movements and speech
+
+\noindent\textbf{}The authors demonstrated their system with two scenarios using a Care O Bot 4 robot. The
+experiments showed that their approach effectively resolves communication problems and
+confusions through symbol manipulation..\\
+
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item Proposed a system that allows robots to handle unknown concepts through "symbol
+manipulation" based on natural language interactions.
+ Demonstrated the effective resolution of communication difficulties between humans and
+robots using ontologies for knowledge storage and reasoning.
+
+ Showcased the system's ability to learn new actions and objects (like "Cook" and
+"spaghetti") through natural conversation, making the learned knowledge immediately
+usable. 
+ Provided their developments as an open source project to contribute to the robotics
+community.
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item The paper implicitly acknowledges the ongoing challenge of making robot interaction as
+intuitive as human to human conversation, as their system is a step towards this but not a
+complete solution.  
+      The need for more complex real world integration and handling of unforeseen situations is a
+continuous challenge in robotics, not fully addressed by this work alone.
+       
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item Clear Problem Statement ,which means The paper clearly articulates the fundamental
+problem of communication breakdown due to unknown concepts in human robot interaction.
+        \item Well Defined Architecture : The proposed three layer architecture is logically structured
+and easy to understand.
+        \item Open Source Contribution
+end users.
+       
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item Limited Experimental Results , The experiments are more similar to proof of concept
+demonstrations rather than rigorous evaluations with diverse test cases or quantitative
+metrics beyond successful concept learning.
+        \item Ambiguity in Symbol Manipulation
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item How robust is the natural language parser in handling noisy speech, accents, or
+grammatically incorrect sentences from users?
+        \item What mechanisms are in place to prevent the robot from learning incorrect or contradictory
+information? Is there a forgetting or unlearning mechanism?
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item The paper suggests further development to expand the system's capabilities, especially its
+reasoning and interaction with humans, and encourages the community to build upon their
+open source framework.
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+This paper introduces a smart system that helps robots learn new words and actions from
+normal human conversation ,even for things they've never seen before. Using a clever
+knowledge base and logic, the robot can quickly understand and apply new information.
+This is a big leap toward making robots more flexible and easier to work with, without
+requiring coding experts.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{A Review on Interactive Reinforcement
+Learning From Human Social Feedback} 
+
+\noindent\textbf{Reference} \\
+\cite{lin_review_2020}J. Lin, Z. Ma, R. Gomez, K. Nakamura, B. He, and G. Li, “A Review on Interactive Reinforcement
+Learning From Human Social Feedback,” IEEE Access, vol. 8, pp. 120757–120765, 2020. 85 citations (Semantic Scholar/DOI) [2025-05-14]. \\
+
+
+\noindent\textbf{Keywords} \\
+Human agent/robot interaction, interactive reinforcement learning, interactive shaping, social interaction
+   \\
+
+\noindent\textbf{Abstract} \\
+Reinforcement learning agent learns how to perform a task by interacting with the environment. The use of reinforcement learning in real life applications has been limited because of the sample efficiency problem. Interactive reinforcement learning has been developed to speed up the agent’s learning and facilitate to learn from ordinary people by allowing them to provide social feedback, e.g, evaluative feedback, advice or instruction. Inspired by real life biological learning scenarios, there could be many ways to provide feedback for agent learning, such as via hardware delivered, natural interaction like facial expressions, speech or gestures. The agent can even learn from feedback via unimodal or multimodal sensory input. This paper reviews methods for interactive reinforcement learning agent to learn from human social feedback and the ways of delivering feedback. Finally, we discuss some open problems and possible future research directions.
+\\
+
+
+\noindent\textbf{Summary} \\
+This paper focus on enabling learning agents (such as robots or software agents) to learn effectively from human social feedback. Traditional reinforcement learning (RL) systems learn by interacting with an environment and receiving rewards or penalties. However, this process is often slow and inefficient, especially in real world scenarios where it can take millions of steps to learn a good policy. To address this limitation, IRL integrates human input such as instructions, evaluative feedback, demonstrations, or advice into the learning process. This social feedback allows agents to learn faster and more effectively, especially in situations where environmental rewards are sparse, delayed, or difficult to define.
+\noindent\textbf{}\\Learning purely from environmental feedback is often too slow and need so much of datas , Humans interacting with these systems are usually non experts, so the learning methods must be intuitive and natural. Human feedback is abundant and can guide the agent more effectively, especially during early learning stages. Therefore, leveraging social feedback like facial expressions, gestures, or verbal instructions can dramatically improve learning efficiency, personalization, and user satisfaction. There some existing fidings relating to this topic , that are 
+demonstration ,where an agent learns by observing humans perform tasks, often used in Imitation Learning or Inverse Reinforcement Learning. , Advice or Instructions  , which means Humans provide natural language commands that must be interpreted and mapped to actions.\\\\
+And Evaluative Feedback , where Trainers give positive or negative feedback (like rewards/punishments) as the agent performs actions.Even with progress, current methods still have some problems. Most systems use buttons or sliders for feedback, which aren’t easy or natural for most people. They often use only one type of feedback, like text or clicks, and miss out on things like facial expressions or gestures. Many systems also work only in simple setups and can’t handle real world tasks that need smooth, ongoing actions. Also, they treat all human feedback the same, even though people give feedback in different ways.\\
+\noindent\textbf{}\\ Instead of proposing a new algorithm, the authors review and synthesize the existing body of work on interactive reinforcement learning. Their main contributions are:
+Classification of IRL Methods: They categorize learning strategies into model based and model free approaches, further breaking them down into reward based (numeric feedback) and policy based (feedback on agent’s policy) methods.
+
+Survey of Feedback Modalities: The paper thoroughly reviews different ways feedback can be provided, including Explicit hardware interfaces , Natural human interactions and Multimodal feedback , The paper highlights future technical directions for interactive reinforcement learning, focusing on making human robot interaction more natural and efficient. This includes developing algorithms for multimodal fusion to allow robots to interpret various human communications (speech, gestures, expressions) simultaneously . And they highlights the point of active learning where robots can inteligently query humans for specific feedback to determine their knowledge gaps .\\
+
+
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item systematically categorizing diverse forms of social feedback (e.g., evaluative feedback, advice, instruction) and their integration strategies within various reinforcement learning (RL) frameworks
+ It synthesizes insights into how different feedback modalities ( verbal, gestural, demonstrations) influence agent policy updates and reward shaping mechanisms. The review's emphasis on the transition towards natural language understanding (NLU) and multimodal sensor fusion for human robot interaction
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item High data requirements make RL hard to apply in the real world.
+ Non experts struggle to provide useful training feedback.
+ It's challenging to combine different types of human feedback effectively.
+        
+       
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item It effectively frames the core problem of RL (sample efficiency, user accessibility) and positions IRL, especially with social feedback, as a viable solution.
+        \item The review bridges concepts from machine learning, robotics, human computer interaction (HCI), and cognitive science, offering a holistic view of the domain.
+        
+       
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item As a review, it synthesizes existing work rather than proposing a novel IRL algorithm or framework. While this is the nature of a review, it means it doesn't push the technical frontier in terms of new model architectures or learning rules.
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item     How can IRL systems ensure robustness to adversarial or noisy human feedback, preventing policy degradation due to unintentional or malicious input?
+
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item Research into multimodal fusion techniques to integrate heterogeneous feedback signals into a coherent learning signal for the agent's policy update.
+        \item Exploration of transfer learning methodologies to enable IRL agents to generalize learned behaviors from one human or task to new, unseen scenarios, improving sample efficiency across domains.
+        
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+The paper shows that using different types of human feedback in reinforcement learning can make AI agent learn faster and adapt better. Future work should focus on better ways for humans and AI to communicate and learn together, making AI more helpful and easier to use.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{A survey of communicating robot learning during human-robot interaction} 
+
+\noindent\textbf{Reference} \\
+\cite{habibian_survey_2025}Soheil Habibian, Antonio Alvarez Valdivia, Laura H. Blumenschein, and Dylan P. Losey. A survey of
+communicating robot learning during human-robot interaction. The International Journal of Robotics
+Research, 44(4):665–698, April 2025.\\
+
+
+\noindent\textbf{Keywords} \\
+Human robot interaction, robot learning, virtual reality and interfaces
+   \\
+
+\noindent\textbf{Abstract} \\
+For robots to seamlessly interact with humans, we first need to make sure that humans and robots understand one another. Diverse algorithms have been developed to enable robots to learn from humans ( transferring information from humans to robots). In parallel, visual, haptic, and auditory communication interfaces have been designed to convey the robot’s internal state to the human (  transferring information from robots to humans). Prior research often separates these two directions of information transfer, and focuses primarily on either learning algorithms or communication interfaces. By contrast, in this survey we take an interdisciplinary approach to identify common themes and emerging trends that close the loop between learning and communication. Specifically, we survey state of the art methods and outcomes for communicating a robot’s learning back to the human teacher during human robot interaction. This discussion connects human inthe loop learning methods and explainable robot learning with multimodal feedback systems and measures of human robot interaction. We find that when learning and communication are developed together the resulting closed loop system can lead to improved human teaching, increased human trust, and human robot co adaptation. The paper includes a perspective on several of the interdisciplinary research themes and open questions that could advance how future robots communicate their learning to everyday operators. Finally, we implement a selection of the reviewed methods in a case study where participants kinesthetically teach a robot arm. This case study documents and tests an integrated approach for learning in ways that can be communicated, conveying this learning across multimodal interfaces, and measuring the resulting changes in human and robot behavior.\\
+
+
+\noindent\textbf{Summary} \\
+This paper looks into how talking and communicating helps robots learn better when working with humans. The main research problem is that while robots are learning more and more from people, we haven't figured out the best ways for humans and robots to communicate with each other both for robots to understand what humans want and for robots to show humans what they're thinking. This communication is really important for building systems where humans and robots work well together and can adapt to new situations.
+This problem matters a lot because modern robots increasingly need human help, corrections, and teamwork, especially in changing, real world places like hospitals, schools, and factories. Good communication helps both sides understand each other, build trust, and work more efficiently, making it a key part of successful human robot learning.\\\\
+Past research in robot learning has mostly focused on methods like copying what humans do, learning through trial and error, and interactive learning systems, where humans show robots how to do things, give rewards, or make corrections. However, many of these approaches have treated communication as something less important, which limits robots' ability to apply what they learn to new situations, adapt, or work well with people.
+The gap in current knowledge is that existing methods often rely on one way signals (like demonstrations or feedback), missing out on two way and multi type communication such as normal speech, hand gestures, or shared attention. This limits both how much information gets shared and how well the learning process works.
+The authors suggest a organized review and classification of communication in robot learning during human robot interaction, grouping it into spoken and non spoken ways of communicating, direct and indirect communication, and how these work with different learning approaches. Their contribution is to show that communication isn't just a side feature but a main mechanism that affects learning quality, adaptability, and user trust.
+\noindent\textbf{}\\\\The suggested viewpoint is better than previous work because it shows that using interactive, multi type, and clear communication helps robots learn more effectively and match better with what humans expect. The review also connects communication strategies with better results in shared decision making, safety, and teamwork.
+Still, challenges remain. The authors point out unsolved problems such as developing communication systems that work on a large scale, ensuring mutual understanding in unclear situations, smoothly combining communication with learning algorithms, and handling real world differences and changes. Future work should address these gaps to make human robot learning more natural, reliable, and applicable to many different situations..\\\\
+
+
+
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item   The authors present a taxonomy of communication modalities in robot learning: verbal vs. non verbal, explicit vs. implicit, and unimodal vs. multimodal.They analyze how communication integrates with learning paradigms such as imitation learning, reinforcement learning, corrective feedback, and interactive reinforcement learning. They highlight the role of bidirectional communication  such as robots explaining their intent/state to humans  for improving learning efficiency, trust, and safety.
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item  Current robot learning methods underuse multimodal communication  like integration of speech, vision, gestures, etc leading to reduced robustness in ambiguous human inputs.Lack of scalable frameworks that couple online learning algorithms with real time, noisy communication channels.
+        
+       
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item Clear categorization of communication modalities and their connection to specific learning algorithms , corrective feedback in RL vs. demonstrations in IL,Technical grounding: cites methods like policy shaping, reward shaping, and explainable robot learning.
+        
+       
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item No quantitative comparison between different communication based learning methods  , how much faster does multimodal feedback improve RL convergence vs. single modal , The taxonomy, while useful, risks being too descriptive ,less emphasis on formal models or mathematical frameworks of communication in learning.
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item     How should robots weigh multimodal inputs when they conflict , gesture contradicts verbal command?
+
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item Building unified frameworks combining learning algorithms with multimodal communication.Developing evaluation metrics for communication effectiveness.Expanding datasets that include both task performance and communication signals.
+        
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+This paper argues that communication is not auxiliary but central to robot learning in HRI. Progress depends on developing multimodal, bidirectional, and adaptive communication mechanisms tightly integrated with learning algorithms. The next leap in HRI will come from robots that not only learn from humans but actively communicate their learning process.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Human-robot interaction methodology:
+Robot teaching activity.} 
+
+\noindent\textbf{Reference} \\
+\cite{velentza_human-robot_2022}Anna-Maria Velentza, Nikolaos Fachantidis, and Ioannis Lefkos. Human-robot interaction methodology: Robot teaching activity. MethodsX, 9:101866, 2022. 9 citations (Semantic Scholar/DOI)[2025-05-14].
+\\
+
+
+\noindent\textbf{Keywords} \\
+human robot interaction , social robots 
+   \\
+
+\noindent\textbf{Abstract} \\
+Research on the use of social robots in education is constantly increasing in the growing field of humanrobot interaction (HRI). Consequently, it is essential to determine an appropriate methodology to test how these robots can optimally interact with students. This study specifically looks at how we can use existing knowledge from psychology, neuroscience and educational research and apply them with validity and credibility in HRI studies. We are interested in incorporating research methodologies to evaluate the performance of social robots acting as university professors in a real classroom environment. Moreover, we aim to measure three effects, a) students’ knowledge acquisition (quiz after lecture and final exam grades), b) level of enjoyment (Likert scale questionnaire), and c) level of surprize (analysis of facial expressions filmed by cameras). To identify the relationship between students’ knowledge acquisition, enjoyment, and level of surprize, we designed a series of three experiments, testing three variables: 1. one human tutor lesson, 2. one robot tutor lesson, 3. two robottutor lessons. In this paper we thoroughly explain the methods used to measuring and testing these variables based on modern and reliable sources.\\
+
+
+\noindent\textbf{Summary} \\
+This research looks at how to test whether humanoid robots can work as university teachers. We want to see if students actually learn better, enjoy classes more, and find the experience interesting when a robot is teaching instead of a human professor,More and more schools are starting to use robots as teachers, but most studies about whether they actually work aren't very well done. They don't use proper research methods from psychology and education, so we can't really trust their results. We need better ways to test if robot teachers are actually helping students learn in real classrooms.Other researchers have already compared robot teachers with human teachers, working with students of different ages. They mainly looked at whether students liked the robots and how much they learned. They used different ways to test this some had robot groups vs. human groups, some had robots tell stories, some recorded videos of how students behaved, and others just asked students which they preferred. Popular robots like Nao and Baxter were used to give lectures or tell stories, and students filled out surveys about their experience .\\\\ Most studies only look at test scores and whether students like the robot teachers, but they miss other important things like whether students actually enjoy the class, feel surprised, or get comfortable with the robot. Plus, many of these experiments aren't set up very well  , they don't control for other factors that might affect the results, making it hard for other researchers to repeat the studies or apply the findings elsewhere. Many also don't use realistic classroom settings or try to hide the fact that it's an experiment, which makes the results less trustworthy.
+The researchers came up with a new way to test robot teachers, borrowing ideas from psychology and brain science. They set up three experiments with college freshmen , First test :  Had some students learn from a human teacher, others from a robot teacher.Second test :  Compared students meeting the robot for the first time versus students who had already worked with it before.Third test  Checked if the robot teaching actually helped students do better on their final exams later.
+
+\noindent\textbf{}\\To measure the results, they gave quizzes to see how much students learned, had them fill out surveys about how much they enjoyed it and how comfortable they felt, and recorded their faces to catch expressions of surprise. They even planted fake researchers in the room to make the robot seem smarter than it actually was.
+This approach digs deeper than previous studies by carefully controlling everything  , the room setup, what gets taught, and how the teacher behaves. It looks at both learning and emotions like enjoyment and surprise, giving a fuller picture of how students really respond to robot teachers. The fake researcher trick is also new  , it makes interactions feel more natural without having to program the robot to be super smart.
+
+The researchers admit their study had some problems  ,  not enough women in the group, too few people in some tests, and using final exam scores wasn't the best way to measure motivation. They say future studies need more diverse people, better ways to apply findings broadly, and should look at what happens when schools actually use robot teachers long term
+\\\\
+
+
+
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item  Created a step by step method for testing robot teachers in real university classes ,Combined psychology and education research techniques (surveys about enjoyment, measuring surprise, tracking comfort levels) with robot studies ,Designed three connected experiments: comparing human vs. robot teachers, new vs. experienced robot users, and long term learning effects ,Used fake researchers to make the robot seem more intelligent and interactions more realistic ,Carefully controlled everything (room setup, timing, scripts, robot actions) so other researchers can repeat the study and trust the results
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item     • Final exam grades aren't great for measuring learning since many other things affect them , Only tested freshmen from one department who weren't engineering students   hard to apply to other groups
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item Looks at both learning and emotions  not just test scores 
+        \item Very transparent:   explains exactly how they did everything so others can understand and repeat it 
+        \item Creative solution  :used fake researchers to work around the robot's limitations
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item Only looked short term : we don't know what happens after the novelty wears off over months or years 
+        \item Fragmented technical details: While it names many algorithms, it does not analyze their limitations, complexity, or scalability in detail.
+        \item  Only tested one robot (Nao)  other robots might work differently
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item    How can HITL approaches ensure safety critical real time constraints in industrial robots like welding or heavy load tasks ?
+
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item Test with more diverse groups  : better gender balance and students from different backgrounds 
+        \item Find better ways to measure long term learning instead of just using final exam scores 
+        
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+This study creates a solid, psychology based method for testing robot teachers in college. It's innovative in measuring both learning and emotions, but the results might not apply broadly since it only tested a narrow group of students. The research shows robots can be believable teachers, but we still need more work to understand how they'd perform with different types of students in everyday classrooms. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{The Power of Combined Modalities in Interactive Robot Learning} 
+
+\noindent\textbf{Reference} \\
+\cite{beierling_power_2025}Helen Beierling, Robin Beierling, and Anna-Lisa Vollmer. The power of combined modalities in
+interactive robot learning. Frontiers in Robotics and AI, 12:1598968, July 2025.
+\\
+
+
+\noindent\textbf{Keywords} \\
+human robot interaction, human in the loop learning, reinforcement learning,
+interactive robot learning, multi modal feedback, learning from demonstration,
+preference based learning, scaffolding in robot learning
+   \\
+
+\noindent\textbf{Abstract} \\
+With the continuous advancement of Artificial intelligence (AI), robots as
+embodied intelligent systems are increasingly becoming more present in daily
+life like households or in elderly care. As a result, lay users are required
+to interact with these systems more frequently and teach them to meet
+individual needs. Human in the loop reinforcement learning (HIL RL) offers
+an effective way to realize this teaching. Studies show that various feedback
+modalities, such as preference, guidance, or demonstration can significantly
+enhance learning success, though their suitability varies among users expertise
+in robotics. Research also indicates that users apply different scaffolding
+strategies when teaching a robot, such as motivating it to explore actions that
+promise success. Thus, providing a collection of different feedback modalities
+allows users to choose the method that best suits their teaching strategy, and
+allows the system to individually support the user based on their interaction
+behavior. However, most state of the art approaches provide users with only
+one feedback modality at a time. Investigating combined feedback modalities
+in interactive robot learning remains an open challenge. To address this,
+we conducted a study that combined common feedback modalities. Our
+research questions focused on whether these combinations improve learning
+outcomes, reveal user preferences, show differences in perceived effectiveness,
+and identify which modalities influence learning the most. The results show that
+combining the feedback modalities improves learning, with users perceiving
+the effectiveness of the modalities vary ways, and certain modalities directly
+impacting learning success. The study demonstrates that combining feedback
+modalities can support learning even in a simplified setting and suggests the
+potential for broader applicability, especially in robot learning scenarios with a
+focus on user interaction. Thus, this paper aims to motivate the use of combined
+feedback modalities in interactive imitation learning.\\
+
+
+\noindent\textbf{Summary} \\
+This paper investigates whether providing multiple ways to teach robots—such as guiding, correcting errors, demonstrating actions, controlling exploration, adjusting speed, and providing backup options—improves robot learning and user satisfaction in comparison to providing feedback in a single way. This is significant because robots operating in homes, hospitals, and other public spaces must learn what people need and desire. Most people need easy, natural ways to teach robots what to do because they are not robot experts. Teaching is made more difficult and less effective by the fact that most systems currently only allow users to provide feedback in one way at a time.\\\\ Determining how combining various forms of feedback influences robot learning is crucial to creating robots that humans can interact with and that can adjust to the needs of various users.
+Previous research has examined various methods that humans can use to teach robots, such as rating, selecting what they like, directing the robot's movements, correcting errors, and demonstrating how to do things. However, these methods were typically tested separately or in combination. Some research integrated preferences and demonstrations in a sequential fashion, while other systems attempted to theoretically integrate various feedback types.However, there were issues with these earlier approaches: no one had adequately tested using multiple feedback methods simultaneously, researchers had not fully figured out what users actually liked or how different feedback types worked together in real world scenarios, and there was no concrete evidence that combining different feedback types actually improved learning outcomes. These knowledge gaps motivated the authors to conduct a more thorough investigation in order to truly determine what functions best.
+\noindent\textbf{}\\\\In order to address these issues, the researchers developed a system that uses a robot arm to provide feedback in seven different ways. They tested the system on participants who were performing a mini golf task. They contrasted a group that had access to all of the feedback options with another group that was limited to expressing preferences. The findings demonstrated that those who had access to a variety of feedback options performed significantly better; they completed the task much more frequently and much more quickly. Regarding the feedback techniques that people preferred to use, some were clearly more well liked and successful than others. Additionally, the study discovered that having multiple ways to teach the robot made people much happier and more satisfied.Researchers must test this strategy in more complex, real world scenarios because the study only used a simple task, so there is still more work to be done. The low usage of some feedback techniques indicates that they may need to be redesigned to make them easier to use. Future research should concentrate on developing more intelligent systems that can automatically select the feedback options that are most appropriate for various individuals and circumstances. Additionally, these concepts should be tested in increasingly challenging and significant real world tasks.
+\\\\
+
+
+
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item This is the first study to test the use of multiple feedback types simultaneously, rather than one method at a time, in human robot learning. These feedback types include preferences, guidance, corrections, demonstrations, exploration control, speed changes, and fallback options.  created a real time interaction system that allows users to provide multiple forms of feedback at once and resolves conflicts between them ( disagreements between correction and guidance).  Numbers clearly demonstrate this: the group with multiple feedback options learned significantly faster and succeeded three times more frequently than the group with only one feedback type. 
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item   Because the task was too easy (mini golf swing), the results might not be applicable to more difficult real world tasks like multi step planning or handling objects with obstacles. We don't really know if the demonstration method is effective because only two people tried it. This feedback type is hardly used. Missing crucial metrics: only used simple questionnaires to gauge how mentally taxing the system was for users. 
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item  Good technical execution: user feedback was properly incorporated into the learning system and statistical testing was conducted. 
+        \item A well controlled experiment that used a strong number based evaluation to fairly compare the preference only group to the multiple feedback group. 
+        \item   Useful for actual users: emphasizing feedback techniques that non experts can comprehend and apply.
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item   Hard to scale up: more complicated robots with a lot more moving parts might not be able to use this method. 
+    
+        \item Ineffective handling of conflicting feedback: the system was unable to appropriately resolve users' contradictory signals. 
+        \item Limited testing: we only attempted one easy task, so we are unsure if it will function well in more complicated real world scenarios.
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item  How would this function in more intricate robot tasks involving object manipulation and vision? 
+
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item  Take on more challenging assignments, be more open about how feedback impacts learning, and accurately gauge mental effort. add safety constraints to prevent risky exploration and to replace fixed rules with adaptive learning to determine the optimal way to combine feedback types. 
+        
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+Combining different forms of feedback greatly enhances robot learning and user satisfaction, but not all feedback techniques are equally effective. For example, speed and exploration control had a significant impact, while guidance felt good to users but didn't do much to help. For real world robotics, the next step is to transition from fixed rules to scalable, safe, and adaptive systems.
+
+
+
+
+
+
+
+
+
+
+\section{Application Domains and Use Cases}
+\subsection{Reinforcement Learning Approaches in Social Robotics} 
+
+\noindent\textbf{Reference} \\
+\cite{akalin_reinforcement_2021}Neziha Akalin and Amy Loutfi. Reinforcement Learning Approaches in Social Robotics. Sensors, 21(4):1292, February 2021.\\
+
+
+\noindent\textbf{Keywords} \\
+reinforcement learning; social robotics; human robot interaction; reward design; physical embodiment
+
+   \\
+
+\noindent\textbf{Abstract} \\
+This article surveys reinforcement learning approaches in social robotics. Reinforcement learning is a framework for decision-making problems in which an agent interacts through trial-anderror with its environment to discover an optimal behavior. Since interaction is a key component in both reinforcement learning and social robotics, it can be a well-suited approach for real-world interactions with physically embodied social robots. The scope of the paper is focused particularly on studies that include social physical robots and real-world human-robot interactions with users. We present a thorough analysis of reinforcement learning approaches in social robotics. In addition to a survey, we categorize existent reinforcement learning approaches based on the used method and the design of the reward mechanisms. Moreover, since communication capability is a prominent feature of social robots, we discuss and group the papers based on the communication medium used for reward formulation. Considering the importance of designing the reward function, we also provide a categorization of the papers based on the nature of the reward. This categorization includes three major themes: interactive reinforcement learning, intrinsically motivated methods, and task performance-driven methods. The benefits and challenges of reinforcement learning in social robotics, evaluation methods of the papers regarding whether or not they use subjective and algorithmic measures, a discussion in the view of real-world reinforcement learning challenges and proposed solutions, the points that remain to be explored, including the approaches that have thus far received less attention is also given in the paper. Thus, this paper aims to become a starting point for researchers interested in using and applying reinforcement learning methods in this particular research field.
+\\
+
+
+\noindent\textbf{Summary} \\
+This paper provides a proper survey and categorization of how reinforcement learning (RL) techniques are used in the context of social robotics, particularly focusing on real world human robot interaction (HRI) with physical robots. The core research problem is understanding how RL can be effectively employed to enable social robots to adapt their behavior based on interaction with humans in dynamic and often unstructured environments. Social robots are now used in everyday places like homes, schools, and hospitals. To work well, they need to adapt to different people and situations over time.Fixed rule based systems don’t handle human behavior well because people are unpredictable. Reinforcement learning helps robots improve by learning from experience through interaction.Since social robots use speech, gestures, and expressions, designing rewards for learning is challenging. Most past work focuses on physical tasks or simulations, not real social interaction. That’s why studying reinforcement learning in real social robots is important.
+This problem is important because social robots are becoming more common in everyday life, helping people and working with them in different ways. \\\\For robots to interact naturally and adjust to each person and situation, they need to keep learning over time. This is hard to do with traditional machine learning or fixed rules. Reinforcement Learning (RL) is a good fit because both RL and social robots involve interaction. With RL, robots can learn what to do by trying things out and getting feedback (like rewards or penalties). Many human robot interactions can be seen as step by step decisions, which matches how RL works. RL also helps robots adapt to different people and learn social behaviors without needing someone to show them exactly what to do.\\
+\noindent\textbf{}\\ Most RL research focuses on general topics like policy search, safe RL, or deep RL in soft robotics, but doesn’t look closely at the specific challenges in social robotics. This paper fills that gap by carefully organizing and analyzing how RL is used in social robotics. The authors group the studies based on the type of RL used like bandit based, value based, policy based, and deep RL and whether the methods are model based or model free (like Q learning or DQN). They also look at how rewards are designed: some use human feedback (interactive RL), some are based on the robot’s own goals (intrinsic motivation), and others focus on how well tasks are completed. Finally, they review how these methods are tested, whether through user opinions, technical performance, or both.
+This survey is meant to be a helpful guide for researchers in social robotics who want to use Reinforcement Learning (RL) in their work. It organizes and explains different RL methods, making it easier to choose the right algorithms, reward types, and ways for robots to communicate, based on the specific task or experiment. The paper also looks at how different RL setups are designed and tested, helping researchers deal with real world challenges like long interactions and rare feedback signals (sparse rewards). It shows that using a mix of reward strategies such as internal motivation, learning from human reactions, or focusing on task results can help with these problems. The paper also gives useful examples of how some studies train robots using saved data or with only a small number of interactions.\\\\
+
+
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item the main contribution by the author is that the complete overview of the how reinforcement learning is being used in social  robots , and organized the past research by checking at the types of algorithms like value based , policy based or deep learning , how rewards are designed like getting feedback from people  using motivation within the robot  and how these systems are tested  like users for opinions or using technical performance scores .the clear and structured overview is a major strength . 
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item Past surveys don’t look closely at how RL is used in real world social robots.Too much research relies on simulations, not real world tests. It's hard to design good reward systems ("curse of goal specification"). Interactive RL has problems like biased feedback from people and long training times.
+        
+       
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item Focus on real robots: Unlike many surveys, it looks at robots interacting with real people, not just in simulations
+        \item Useful for real world applications: It talks about real problems like reward design and data collection, which helps researchers doing hands on work.
+        \item Highlights gaps: It points out where the field still needs work, which is helpful for future research.
+        
+       
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item Not enough deep analysis: The paper lists and categorizes many methods but doesn't always say which ones work better or why.
+        \item No numbers: It doesn’t give performance comparisons between methods or include data summaries.
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item     How can we compare different ways of designing rewards (like human feedback vs. built in motivation) for different social robot tasks?
+
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item Develop more robust RL methods that can handle real world social uncertainties and deploy on physically embodied social robots.
+        \item Design mechanisms to interpret implicit human feedback into effective reward signals.
+        \item Investigate transfer learning techniques so that learned skills can be transferred between different robot
+        \item Employ multi goal RL where a robot can learn to perform multiple diverse tasks, like assistive robots handling reminders, safety monitoring, and communication.
+        
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+This paper is a helpful for understanding how social robots can learn using Reinforcement Learning (RL). It clearly explains the different ways robots can learn by interacting with people and using feedback to improve. The main takeaway is that RL has a lot of potential to make robots more flexible and responsive in social settings. However, there are still big challenges in helping robots learn well in real life situations, where human behavior can be complex and unpredictable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{A Comprehensive Study on Robot Learning from Demonstration} 
+
+\noindent\textbf{Reference} \\
+\cite{ambhore_comprehensive_2020}J. Sushilkumar Ambhore. A Comprehensive Study on Robot Learning from Demonstration. In 2020 2nd International Conference on Innovative Mechanisms for Industry Applications (ICIMIA), pages 291–299, Bangalore, India, March 2020. IEEE. 10 citations (Semantic Scholar/DOI) [2025-05-14]
+\\
+
+
+\noindent\textbf{Keywords} \\
+Learning from demonstration; robot programming by demonstration; imitation learning; apprenticeship learning; robot learning from demonstration; human robot interaction
+   \\
+
+\noindent\textbf{Abstract} \\
+The robots are set to penetrate into daily life of human beings. The purpose of a robot is to accomplish a goal within specified task constraints, thus reducing human effort as well as time. S ince most of the end users are novice; the ability to use/adapt to a robot will vary. Besides that, since user references will be different,the task performance specifications/constraints would vary. An approach where an end user can teach a robot to perform desired tasks without the need of tedious reprogramming is learning from demonstration. This paper presents a survey of robot learning from demonstration. The problem formulation for LfD (Learning from Demonstration) is analyzed. The various modes of demonstration data acquisition and various data processing methods are discussed in an organized manner. Various learning approaches reported in literature are put forth. The issues of demonstration methods, suboptimal demonstrations, and evaluation metrics are highlighted. Lastly, the current issues which limit the adoption of LfD in real world scenarios are put forth in order to determine the future scope of work in this domain.
+\\
+
+
+\noindent\textbf{Summary} \\
+this survey paper is giving an understanding about what the learning and demonstration is and how it works, it starts with saying that when a robot is deployed in an environment with hard coded way , it will be difficult to make any changes in the actions as it needs tons of reprogramming, thats where the lfd comes in , it enables the robot to learn dynamically from the human demonstrator . From the robots side its always good to reduce the time to learn it , and from the humans side , the improved lfd means the human demonstrator or teacher doesn’t have to give too much demonstrations and the robo should be able to grasp that with in less time . \\The process of lfd consist of  demonstration data acquisition , demonstration data encoding /modelling ,execution of skill 
+\noindent\textbf{}there are some key aspects of lfd analyzed in this paper , such as problem formulation , demonstration data acquisition and processing , correspondence issue , interaction modes and learning approaches . The problem formulation defined as the factors like environment description and  defining skill goals or objectives, and evaluation metrics . Various modes of demonstration data acquisition and processing methods are discussed. The process involves demonstration data acquisition, encoding/modeling, and skill execution, with human teachers providing examples consisting of states and actions , accurately mapping a human teacher's states and actions to a robot's capabilities due to differences in physical structure, sensing, and actuation is identified as a major source of error . The paper also  categorizes human robot interaction modes for providing demonstrations into "Doing" (manual commands, kinesthetic teaching, teleoperation) "Showing" (visual, sensors on teacher), and "Feedback" (visual, tactile, verbal).\\
+
+
+
+
+Learning approaches  are categorized in to Low-level skills/Motion primitives/Trajectory/Motor Skills and high level tasks .  The low level skills involve movements in 3D space, primitive motions, and are learned using approaches like Dynamic Motion Primitives (DMP), Gaussian Mixture Modelling and Regression (GMM GMR), and Hidden Markov Models (HMM). High level 
+ are sets of low level skills and involve object affordances, focusing on learning a plan or inferring goals/objectives, often supplemented with annotations or key frames from the teacher.\\
+
+The paper conclude by saying several open challenges in LfD, such as making LfD frameworks usable in social settings, designing benchmarking approaches, tightly integrating LfD sub systems, designing systems for end users and real tasks, designing suitable robotic platforms, and transferring real world understanding to robots. The study aims to provide a systematic review to address these issues and facilitate the development of efficient robotic platforms.
+\\\\
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item Analyzes the problem formulation for LfD. 
+    Highlights issues of demonstration methods, suboptimal demonstrations, and evaluation metrics.
+     It talks about current issues limiting the adoption of LfD in real world scenarios
+
+        
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item Making LfD frameworks usable in social settings.
+     Designing systems for end users and real tasks.
+        
+        
+       
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item Comprehensive Coverage: Covers a broad range of LfD topics.
+        \item Structured Organization: Well  organized information, easy to understand.
+        \item Identification of Challenges: Effectively identifies and articulates current LfD challenges.
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item Focus on Existing Literature: As a survey, it summarizes existing work without proposing novel solutions. 
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item     How can the "correspondence issue" be effectively addressed in real world scenarios?
+
+
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item Making LfD frameworks usable in social settings.
+        \item Designing benchmarking approaches for LfD.
+        
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+Robots can learn new skills easily from people, which means less complicated computer coding. Even though there are different ways to gather information, learn, and make robot skills better, this field is moving forward to create stronger and easier to use robots. In the future, we need to focus on solving real world problems and bringing together different parts of robot learning so robots can become truly smart and helpful in society.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Human-in-the-Loop Robot Learning for Smart  Manufacturing: A Human-Centric Perspective} 
+
+\noindent\textbf{Reference} \\
+\cite{chen_human---loop_2025}Hongpeng Chen, Shufei Li, Junming Fan, Anqing Duan, Chenguang Yang, David Navarro-Alarcon,
+and Pai Zheng. Human-in-the-Loop Robot Learning for Smart Manufacturing: A Human-Centric
+Perspective. IEEE Transactions on Automation Science and Engineering, 22:11062–11086, 2025.\\
+
+
+\noindent\textbf{Keywords} \\
+Robot learning, smart manufacturing, humanin the loop, human guidance.
+   \\
+
+\noindent\textbf{Abstract} \\
+Robot learning has attracted an ever increasing attention by automating complex tasks, reducing errors, and increasing production speed and flexibility, which leads to significant advancements in manufacturing intelligence. However, its low training efficiency, limited real time feedback, and challenges in adapting to untrained scenarios hinder its applications in smart manufacturing. Introducing a human role in the training loop, a practice known as human in the loop (HITL) robot learning, can improve the performance of robots by leveraging human prior knowledge. Nonetheless, the exploration of HITL robot learning within the context of human centric smart manufacturing remains in its infancy. This study provides a holistic literature review for understanding HITL robot learning within an industrial context from a human centric perspective. A united structure is presented to encompass different aspects of human intelligence in HITL robot learning, highlighting perception, cognition, behavior, and notably, empathy. Then, the typical applications in manufacturing scenarios are analyzed to expand the research landscape for smart manufacturing. Finally, it introduces the empirical challenges and future directions for HITL robot learning in the next industrial revolution era.\\
+
+
+\noindent\textbf{Summary} \\
+This paper addresses the problem of making robots more adaptable, efficient, and user friendly in smart manufacturing through Human in the Loop (HITL) robot learning. Traditional robot learning methods, like copying human actions and trial and error learning, face problems such as slow training, limited feedback, and poor ability to handle new situations they haven't seen before. Since modern factories need flexibility, toughness, and human robot teamwork, including humans in the training process has become an important research area.
+The topic is very important because the next generation of smart manufacturing focuses on humans and robots evolving together. Robots alone cannot yet handle complex, changing, and unpredictable environments. By using human perception, thinking, behavior, and even understanding of emotions, manufacturing systems can combine human creativity and adaptability with robot accuracy and strength, making workplaces safer, more efficient, and better for workers.
+Earlier research has focused mainly on robot control and machine learning methods, often ignoring the human intelligence part in the process. This gap in existing knowledge motivated the authors to present a complete literature review that organizes HITL robot learning into four human intelligence based levels: Perception (understanding human instructions), Thinking (reasoning and decision making), Behavior (skill transfer), and Understanding Emotions (responding to human feelings).\\\\
+The paper's contribution is bringing together these different viewpoints into an organized review and connecting them to manufacturing situations. It also groups human roles in HITL operator, collaborator, and supervisor and talks about typical uses such as inspection, assembly, welding, and helping workers lift heavy things safely. Compared with existing reviews, this work emphasizes the human centered viewpoint and extends beyond manufacturing, covering healthcare, farming, and social services.
+\noindent\textbf{}\\\\The proposed viewpoint is better because it shows how HITL improves adaptability, learning speed, and trust between humans and robots, while also supporting advanced ideas like applying knowledge to new situations, learning from few examples, and simple programming, which are essential for flexible manufacturing.
+However, challenges still exist. Current HITL approaches still have trouble with using data efficiently, making systems work on a large scale, combining different types of sensors, and making sure they work well across different and messy real world tasks. Future research should aim at developing stronger HITL systems, improving robots that understand emotions, and addressing moral and workplace comfort issues in human robot interaction.\\\\
+
+
+
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item  The paper provides a human centric framework for HITL robot learning with four technical layers: Perception (multimodal sensing and recognition), Cognition (reasoning and decision making), Behavior (physical skill transfer via imitation/DRL), and Empathy (emotion aware interaction). Identifies roles of humans in training loops: operator (demonstration/teleoperation), collaborator (real time co working feedback), supervisor (evaluation and correction). Perception: CNN/LSTM based vision, EMG/EEG physiological sensing, multimodal fusion. Cognition: language conditioned reasoning architectures, planning transformers, human in the loop RL for decision making.
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item Current HITL methods have low training efficiency, high data requirements, and poor generalization to new/unstructured tasks.Existing reviews have focused on algorithms (IL/DRL) but not on the integration of human intelligence (perception, cognition, empathy) in the loop. Lack of standardized benchmarks, evaluation metrics, and datasets for HITL in industrial contexts.Difficulties in multimodal sensor fusion (vision, haptics, EEG/EMG) due to calibration, synchronization, and noise.
+       
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item Technical depth: Discusses concrete algorithms (CNNs for vision, Bi LSTM for intention parsing, GMM/DMP for skill transfer, TDRL for emotion learning).
+        \item System perspective: Moves beyond robot autonomy   emphasizes cyber physical human systems.
+        \item Bridges research and practice: Applications in welding, inspection, surgery, exoskeletons link HITL theory to manufacturing reality.
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item Heavy survey nature: Lacks quantitative benchmarking or systematic performance comparison of HITL methods.
+        \item Fragmented technical details: While it names many algorithms, it does not analyze their limitations, complexity, or scalability in detail.
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item    How can HITL approaches ensure safety critical real time constraints in industrial robots like welding or heavy load tasks ?
+
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item Improve data efficiency (few shot, transfer learning, low code).
+        \item Develop empathy aware HITL frameworks for trust and acceptance.
+        \item  Establish benchmark datasets and protocols for HITL robot learning in industrial tasks.
+        
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+Human in the loop robot learning offers a pathway to make industrial robots more adaptive, safe, and socially intelligent by embedding human perception, cognition, behavior, and empathy into their training. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{System Design and Interface Development}
+
+\subsection{Interactive Robot Learning: An Overview,} 
+
+\noindent\textbf{Reference} \\
+\cite{chetouani_interactive_2023}  M. Chetouani, “Interactive Robot Learning: An Overview,” in Human Centered Artificial Intelligence (M. Chetouani, V. Dignum, P. Lukowicz, and C. Sierra, eds.), vol. 13500, pp. 140–172, Cham: Springer International Publishing, 2023. Series Title: Lecture Notes in Computer Science..  \\
+
+
+\noindent\textbf{Keywords} \\
+Robot learning · Interactive machine learning ·  Reinforcement learning · Learning from feedback · Learning from  demonstrations · Learning from instructions · Human teaching strategies
+   \\
+
+\noindent\textbf{Abstract} \\
+How do people teach robots tasks? Here, we focus on main methods and models enabling humans to teach embodied social agents such as social robots, using natural interaction. Humans guide the learning process of such agents by providing various teaching signals, which could take the form of feedback, demonstrations and instructions. This overview describes how human teaching strategies are incorporated within machine learning models. We detail the approaches by providing definitions, technical descriptions, examples and discussions on limitations. We also address natural human biases during teaching. We then present applications such as interactive task learning, robot behavior learning and socially assistive robotics. Finally, we discuss research opportunities and challenges of interactive robot learning \\
+
+
+\noindent\textbf{Summary} 
+This is an overview/survey paper that reviews the field of interactive robot learning. The paper aims to provide the fundamental concepts, definitions, principles, methodologies, applications, and challenges in interactive robot learning , specifically focusing on how humans teach robots tasks through natural interaction using feedback, demonstrations, and instructions. There are several robot learning algortihms such as Multi tkask learning, transfer learning or life long learning , using the pretrained autonomous learning algorithms can be unsafe and not optimal , so interactive task leaning  comes with an expectation of getting guidance and feedback from humans to make it more efficient and safe . \\\\ There are several other existing  methods that tries to solve this problem such as reinforcement learning , where the robot learn via trial and error with predefined reward functions , learning from demonstration (lfd) , and interactive machine learning, where human feedback is part of the learning loop .there are certain limitations to these methods ,LfD often assumes ideal demonstrations and ignores real time human intent. The author then gave a proper structure of the author offered a comprehensive framework and taxonomy of human teaching strategies and how these can be integrated into machine learning models , that are feedbacks , demonstration and instructions , Current interactive learning approaches require many human interventions, which is costly.Most current systems rely on a single form of human input . A key future challenge is developing models that can interpret and learn from multiple, simultaneous human signals
+
+\noindent\textbf{}\\According to the paper, interactive learning allows for adaptation, personalization, and natural communication by involving humans in the training process, which sets it apart from traditional machine learning. The ways in which important frameworks like TAMER, TICS, and Inverse Reinforcement Learning (IRL) manage the interpretation of human signals are covered.
+
+\noindent\textbf{}\\Credit assignment, reward hacking, teaching biases, symbol grounding, and mutual understanding are among the difficulties of IRL that are also examined. The study highlights the need for multimodal signal processing, improved computational models of human behavior, and hybrid learning approaches that blend interaction and autonomy.\\
+
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item the overview offers a comprehensive understanding of the human in the loop strategies such as feedback , demonstration , and instructionIt Integrates perspectives from reinforcement learning, machine learning, cognitive science, and human robot interaction.The author Introduces a unified view of different shaping strategies (reward/value/policy) for feedback integration in RL
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item Existing models often rely on unrealistic assumptions like optimal human behavior or mutual understanding of language . some of the scientific deficits that I found was Difficulty in collecting consistent, replicable teaching signals across varied human participants
+        
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item Clear definitions and taxonomy of human teaching strategies.
+        \item It gives well structured citations and numbers to which we can just click and go to .
+        \item It include some real world applications
+        \item differentiating concepts clearly
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item lacks new experimental or it explains too much on the existing frameworks
+        \item sometimes its hard to understand some concepts due to overly broad .
+       
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item What mechanisms ensure safety and robustness when learning from  misleading human input?
+        \item How can robots dynamically adjust their teaching model based on individual user styles?
+        \item How can robot change their teaching model based on different individual user styles?
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item  autonomous interactive learning : Develop hybrid learning strategies that combine autonomous exploration with human input.
+        \item Multiple and Multimodal Human Interventions: Design systems that can interpret and integrate multimodal teaching signals (speech, gesture, emotion, etc.).
+        \item Mutual Understanding : Enhance robot transparency and explainability to build mutual understanding.
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+Interactive robot learning is an exciting field where robots learn by working closely with people through feedback, demonstrations, and instructions. But it’s not just about smart algorithms , for robots to truly learn well, they need to understand how we think, what we mean, and how we try to teach them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Advancing Interactive Robot Learning: A User Interface Leveraging  Mixed Reality and Dual Quaternions} 
+
+\noindent\textbf{Reference} \\
+\cite{feith_advancing_2024}Nikolaus Feith and Elmar Rueckert. Advancing Interactive Robot Learning: A User Interface
+Leveraging Mixed Reality and Dual Quaternions. In 2024 21st International Conference on Ubiquitous
+Robots (UR), pages 21–26, New York, NY, USA, June 2024. IEEE \\
+
+
+\noindent\textbf{Keywords} \\
+interactive robot learning,dual quaternions
+   \\
+
+\noindent\textbf{Abstract} \\
+This paper proposes an innovative mixed reality (MR) user interface using dual quaternions (DQ) to enhance interactive robot learning (IntRL). The interface, developed for Microsoft Hololens2, facilitates intuitive interaction and visualization of robot pose trajectories in 3D space. It is designed with three main modes: Subscribe, for observing robot movements; Publish, for controlling robot actions; and Interaction, the main feature that allows users to adjust and refine trajectories. The use of DQ in this context provides a robust and efficient way to represent complex spatial relationships and motion. By bridging the gap between human operators and robotic systems, this interface aims to simplify complex robotic manipulations and demonstrates potential for broader applications in interactive learning environments, offering a novel approach in the field of robotics.\\
+
+
+\noindent\textbf{Summary} \\
+This paper tackles the challenge of making robot learning more user friendly and efficient by creating a mixed reality interface that lets people interact with robot learning systems. The main problem they're trying to solve is how to show and adjust complex robot arm movements in a way that regular people can easily understand and work with, while also making sure machine learning systems can handle the information effectively. This matters a lot because robot learning usually takes a really long time and requires technical expertise, which makes it hard for most people to use. By creating an easy to use interface, human feedback can be directly built into machine learning processes, which reduces training costs, improves teamwork between humans and robots, and makes robotics useful in more real world situations where non experts need to work with robots.\\\\
+Previous research has looked into using augmented and mixed reality for robot programming, showing that these approaches make things more efficient and improve how humans and robots work together. Scientists have also used special mathematical tools called dual quaternions for representing robot positions and creating smooth robot movements, and developed interactive machine learning methods that let users give feedback to learning systems. However, these earlier approaches had problems: existing AR/VR interfaces often don't let people safely interact directly with real robots, traditional ways of representing robot movements are either too computationally heavy or don't work well for smooth motion, and current interactive learning methods mostly focus on preference learning without letting users make real time spatial adjustments. This gap between what people needed and what was available motivated the authors to create a better solution.
+\noindent\textbf{}\\\\The researchers designed a mixed reality interface for Microsoft HoloLens 2 that uses dual quaternions to represent and control robot poses efficiently, with three different modes: a Subscribe Mode for safely watching robot movements, a Publish Mode for controlling robot joint movements through mixed reality sliders, and an Interaction Mode that lets users directly refine and adjust robot trajectories in 3D space. The mixed reality interface combines easy to understand visualization, safe offline testing, and real time trajectory adjustment, with dual quaternions making calculations efficient enough for limited hardware like HoloLens 2 while providing smooth interpolation of robot trajectories. This represents a big improvement over previous 2D and web based interfaces by enabling direct spatial interaction. However, challenges remain: the authors noted limited processing power of HoloLens 2 and restricted communication bandwidth, and future work includes testing the mixed reality interface with more advanced learning algorithms, exploring different ways to represent robot policies beyond current methods, and developing new interactive robot learning approaches specifically designed for mixed reality environments.\\
+
+
+
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item Created a mixed reality system using HoloLens 2 that lets people see and directly adjust robot arm movements in 3D space, making robot programming more intuitive. Used special math tools called dual quaternions to represent robot movements efficiently and smoothly, which works well even on devices with limited computing power. 
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item  No real testing with users : they built the system but didn't actually test it with people doing real robot learning tasks to see if it works better.Limited by hardware : the HoloLens 2 doesn't have enough processing power and the communication between systems is too slow for complex tasks. 
+        
+       
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item Solid mathematical foundation : uses proven math techniques for smooth and efficient robot movement representation. 
+        Practical design choices : worked around the limitations of current mixed reality hardware while keeping the system usable in real time. 
+        
+       
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item No proof it actually works : didn't measure how well users can actually program robots or if they learn faster with this system. Depends on expensive, specific equipment that not everyone has access to, which makes it hard for others to use or test. 
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item     how well does this work with more complex robots that have many moving parts or multiple arms working together? 
+
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item Test the interface with advanced learning algorithms, try different ways of representing robot movements, and develop new learning methods designed for mixed reality. Compare how well this works versus traditional computer interfaces, test it with regular people who aren't robot experts, and create versions where multiple people can teach robots together. 
+        
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+This paper creates a technically solid mixed reality interface that makes robot programming more intuitive by letting people directly adjust robot movements in 3D space using efficient mathematical tools. While the approach shows promise for making robot learning more accessible, it needs real user testing and scalability improvements to prove it actually works better than current methods.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Challenges and Future Directions}
+\subsection{A Survey on Interactive Rein-forcement Learning: Design Principles and Open Challenges} 
+
+\noindent\textbf{Reference} \\
+\cite{arzate_cruz_survey_2020}J. Christian Arzate Cruz and Takeo Igarashi. A Survey on Interactive Rein-forcement Learning: Design Principles and Open Challenges. In Proceedingsof the 2020 ACM Designing Interactive Systems Conference, pages 1195–1209, Eindhoven Netherlands, July 2020. ACM.
+
+\\
+
+
+\noindent\textbf{Keywords} \\
+Interactive Machine Learning; Interactive Reinforcement Learning; Human-agent Interaction.
+   \\
+
+\noindent\textbf{Abstract} \\
+Interactive reinforcement learning (RL) has been successfully used in various applications in different fields, which has also motivated HCI researchers to contribute in this area. In this paper, we survey interactive RL to empower human-computer interaction (HCI) researchers with the technical background in RL needed to design new interaction techniques and propose new applications. We elucidate the roles played by HCI researchers in interactive RL, identifying ideas and promising research directions. Furthermore, we propose generic design principles that will provide researchers with a guide to effectively implement interactive RL applications.
+
+\\
+
+
+\noindent\textbf{Summary} \\
+the main topic of this paper is interactive reinforcement learning (interactive rl), which is a type of RL where humans and machine interact and human feedback can improve the learning process of an artificial intelligence system . The standard ml methods that learns from the training data sets are not efficient for the applications that has to have a great impact on daily life .  To enable this in more complex situations ml has to overcome certain obstacles such as how to correctly specify the problem improve sampling efficiency an adapt to the need of the individual end users . This survey is focusing only on the approaches that can be applied to an interactive rl settings . One of the main intentions of the author is to provide a good knowledge to the researchers working on HCI(human computer interaction) field . And this will help for making a design principles for interactive RL  that are generic enough to be applied in physical or simulated environments  
+\noindent\textbf{}\\\\standard reinforcement learning : the agent chooses an action based on its current policy , the environment responds with a state of transition and a reward . The leaning is autonomous , so no human is involved during the training 
+interactive reinforcement learning : human gives rewards , suggestion or advice that can affect the reward function ,policy , and exploration strategy . It is more sample efficient and aligned with human intent . 
+\noindent\textbf{}\\\\
+It maps the design dimentions such as reward function shaping policy shaping, exploration guidance, and value function augmentatio to specific rl components . And it shows hoe different types of human feedback interact with these components . All works classified in this design dimension tailor the reward function of the RL based algorithm using human feedback. The main objectives of this feedback are to speed up learning, customize the behavior of the agent to fit the user’s intentions, or teach the agent new skills or behaviors.the reward design problem is a bit difficult because the RL designer has to define the agent’s behaviors as goals that are explicitly represented as rewards. This approach can cause difficulties in complex applications where the designer has to foresee every obstacle the agent could possibly encounter. Furthermore, the reward function has to be designed  to handle trade offs between goals. These reward design challenges make the process an iterative task: RL designers alternate between evaluating the reward function and optimizing it until they find it acceptable. This alternating process is called reward shaping , Existing surveys provide very less actionable design guidelines for HCI researchers or connect human feedback types to RL algorithm design. They also lack a unified framework for comparing interaction methods and feedback strategies.this survey uniquely connecting  RL and HCI, identifying how human feedback integrates with RL components . \\\\
+
+\noindent\textbf{Scientific contributions} 
+\begin{itemize}
+        \item Clear framework for classifying interactive RL systems by how and where human feedback is injected.
+         Connection of each feedback type to specific technical components (reward shaping, Q updates, policy biases).
+         Discussion on feedback delay models, fatigue, gamification  things often ignored in RL focused research.
+        
+        
+\end{itemize}
+
+\noindent\textbf{Scientific deficits} 
+\begin{itemize}
+        \item Very few real world user studies are referenced (most are from toy environments like GridWorld)
+        
+        
+       
+\end{itemize}
+
+\noindent\textbf{Notes}
+\begin{itemize}
+    \item \noindent\textbf {Strength}
+    \begin{itemize}
+        \item It specifically targets the HCI community, highlighting opportunities for collaboration between machine learning and HCI researchers a unique contribution compared to broader RL surveys.
+        \item It proposes practical design principles, such as managing feedback delay, handling user fatigue, and matching interaction types to user expertise.
+
+        \item The concept of categorizing end users based on their expertise and preferences provides a useful human centric lens to IRL design.
+
+
+    \end{itemize}
+    
+    \item \noindent\textbf{Weakness}
+    \begin{itemize}
+        \item The paper mostly synthesizes existing research without introducing a novel framework, taxonomy, or methodology of its own.
+        \item Some terms like “heuristic function,” “guidance,” and “critique” overlap in meaning and may benefit from clearer distinctions or formal definitions.
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item \noindent\textbf {Open Questions}
+    \begin{itemize}
+        \item     How can we formally model user behavior and preferences in IRL?
+
+
+    \end{itemize}
+    
+    \item \noindent\textbf{Future Work}
+    \begin{itemize}
+        \item Combining design	 dimensions dynamically: switch from reward shaping to policy shaping based on feedback quality or user fatigue.
+        \item Safe interactive RL: Integrate safety constraints directly into exploration and feedback loops.
+        \item Explainable RL: Help users understand why an agent took certain actions using state importance metrics or gaze/focus signals.
+        
+    \end{itemize}
+\end{itemize}
+
+
+\noindent\textbf{Take away message}  \\
+Human feedback isn’t just a noisy reward it can shape the reward function, bias policy, guide exploration, or even boot Q values. This paper provides a modular framework that maps how and where to use human input in the RL pipeline, particularly for HCI researchers who need to make these systems usable and interpretable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
